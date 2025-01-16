@@ -1,0 +1,27 @@
+{
+  "name": "wwebjs",
+  "version": "1.0.1",
+  "description": "Fixed bugs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "t"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kyluxx/wwebjsbot.git"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "kyluxx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kyluxx/wwebjsbot/issues"
+  },
+  "homepage": "https://github.com/Kyluxx/wwebjsbot#readme",
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.26.1-alpha.3"
+  }
+}
