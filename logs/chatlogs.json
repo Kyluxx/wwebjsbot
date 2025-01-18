@@ -1,0 +1,2106 @@
+{
+  "logs": [
+    {
+      "chatId": "1",
+      "userName": "John Doe",
+      "number": "62895634600989@c.us",
+      "content": "Hello",
+      "timestamp": "1/18/2025, 3:00:00 PM"
+    },
+    {
+      "chatId": "2",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "test1",
+      "timestamp": "1/18/2025, 3:29:12 AM"
+    },
+    {
+      "chatId": "3",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "test2",
+      "timestamp": "1/18/2025, 3:29:21 AM"
+    },
+    {
+      "chatId": "4",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "test3",
+      "timestamp": "1/18/2025, 3:29:26 AM"
+    },
+    {
+      "chatId": "5",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "test4",
+      "timestamp": "1/18/2025, 3:29:31 AM"
+    },
+    {
+      "chatId": "6",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "test5",
+      "timestamp": "1/18/2025, 3:29:32 AM"
+    },
+    {
+      "chatId": "7",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 3:29:38 AM"
+    },
+    {
+      "chatId": "8",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "yeptryagain",
+      "timestamp": "1/18/2025, 3:33:02 AM"
+    },
+    {
+      "chatId": "9",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "again",
+      "timestamp": "1/18/2025, 3:33:07 AM"
+    },
+    {
+      "chatId": "10",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 3:33:11 AM"
+    },
+    {
+      "chatId": "11",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "fltest",
+      "timestamp": "1/18/2025, 3:35:41 AM"
+    },
+    {
+      "chatId": "12",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 3:35:45 AM"
+    },
+    {
+      "chatId": "13",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 3:37:12 AM"
+    },
+    {
+      "chatId": "14",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "thefallshouldbehere",
+      "timestamp": "1/18/2025, 3:39:02 AM"
+    },
+    {
+      "chatId": "15",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 3:41:26 AM"
+    },
+    {
+      "chatId": "16",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "lets fucking go",
+      "timestamp": "1/18/2025, 3:41:33 AM"
+    },
+    {
+      "chatId": "17",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 3:41:38 AM"
+    },
+    {
+      "chatId": "18",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "oh yeah baby",
+      "timestamp": "1/18/2025, 3:44:29 AM"
+    },
+    {
+      "chatId": "19",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 3:44:35 AM"
+    },
+    {
+      "chatId": "20",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "this should be working right? \nprobably",
+      "timestamp": "1/18/2025, 3:46:08 AM"
+    },
+    {
+      "chatId": "21",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 3:46:15 AM"
+    },
+    {
+      "chatId": "22",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "yep and yep",
+      "timestamp": "1/18/2025, 3:48:42 AM"
+    },
+    {
+      "chatId": "23",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "yeah\nthis\nis\n/n",
+      "timestamp": "1/18/2025, 3:48:50 AM"
+    },
+    {
+      "chatId": "24",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 3:48:52 AM"
+    },
+    {
+      "chatId": "25",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "ahahaha",
+      "timestamp": "1/18/2025, 3:53:32 AM"
+    },
+    {
+      "chatId": "26",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "yayaya deleted.",
+      "timestamp": "1/18/2025, 3:57:30 AM"
+    },
+    {
+      "chatId": "27",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "deletya,iya",
+      "timestamp": "1/18/2025, 4:01:27 AM"
+    },
+    {
+      "chatId": "28",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "plsshowup",
+      "timestamp": "1/18/2025, 4:03:49 AM"
+    },
+    {
+      "chatId": "29",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "THIS SHOULD SHOW UP",
+      "timestamp": "1/18/2025, 4:05:59 AM"
+    },
+    {
+      "chatId": "30",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "OH MAN THIS BETTER BE",
+      "timestamp": "1/18/2025, 4:07:36 AM"
+    },
+    {
+      "chatId": "31",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "WELL THEN HB THIS ONE?",
+      "timestamp": "1/18/2025, 4:08:44 AM"
+    },
+    {
+      "chatId": "32",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "UGH THIS BETTER BE WORKING",
+      "timestamp": "1/18/2025, 4:10:00 AM"
+    },
+    {
+      "chatId": "33",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "alright!",
+      "timestamp": "1/18/2025, 4:10:12 AM"
+    },
+    {
+      "chatId": "34",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "...",
+      "timestamp": "1/18/2025, 4:12:04 AM"
+    },
+    {
+      "chatId": "35",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "yeah, try this one.",
+      "timestamp": "1/18/2025, 4:15:12 AM"
+    },
+    {
+      "chatId": "36",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "umm",
+      "timestamp": "1/18/2025, 4:16:27 AM"
+    },
+    {
+      "chatId": "37",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "?",
+      "timestamp": "1/18/2025, 4:18:06 AM"
+    },
+    {
+      "chatId": "38",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "another one.",
+      "timestamp": "1/18/2025, 4:20:31 AM"
+    },
+    {
+      "chatId": "39",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "easy baby",
+      "timestamp": "1/18/2025, 4:20:42 AM"
+    },
+    {
+      "chatId": "40",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 4:20:44 AM"
+    },
+    {
+      "chatId": "41",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "yea yea whtver",
+      "timestamp": "1/18/2025, 4:25:22 AM"
+    },
+    {
+      "chatId": "42",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "fallback deleted.?",
+      "timestamp": "1/18/2025, 4:27:46 AM"
+    },
+    {
+      "chatId": "43",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 4:27:56 AM"
+    },
+    {
+      "chatId": "44",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "anajkaka",
+      "timestamp": "1/18/2025, 4:28:05 AM"
+    },
+    {
+      "chatId": "45",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "mxnsjsndjsb",
+      "timestamp": "1/18/2025, 4:28:06 AM"
+    },
+    {
+      "chatId": "46",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "jsjsnsjs",
+      "timestamp": "1/18/2025, 4:28:07 AM"
+    },
+    {
+      "chatId": "47",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 4:28:12 AM"
+    },
+    {
+      "chatId": "48",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 4:28:40 AM"
+    },
+    {
+      "chatId": "49",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "goat",
+      "timestamp": "1/18/2025, 4:28:49 AM"
+    },
+    {
+      "chatId": "50",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "crossgroupfallback",
+      "timestamp": "1/18/2025, 4:34:35 AM"
+    },
+    {
+      "chatId": "51",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 4:34:42 AM"
+    },
+    {
+      "chatId": "52",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "wow",
+      "timestamp": "1/18/2025, 4:34:46 AM"
+    },
+    {
+      "chatId": "53",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "h",
+      "timestamp": "1/18/2025, 4:41:17 AM"
+    },
+    {
+      "chatId": "54",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 4:41:24 AM"
+    },
+    {
+      "chatId": "55",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback on",
+      "timestamp": "1/18/2025, 4:41:33 AM"
+    },
+    {
+      "chatId": "56",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallbavk",
+      "timestamp": "1/18/2025, 4:42:48 AM"
+    },
+    {
+      "chatId": "57",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 4:42:50 AM"
+    },
+    {
+      "chatId": "58",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fbon",
+      "timestamp": "1/18/2025, 4:42:59 AM"
+    },
+    {
+      "chatId": "59",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",fallback",
+      "timestamp": "1/18/2025, 4:43:03 AM"
+    },
+    {
+      "chatId": "60",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",jc xirpl4",
+      "timestamp": "1/18/2025, 5:01:08 AM"
+    },
+    {
+      "chatId": "61",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c xirpl4",
+      "timestamp": "1/18/2025, 5:05:01 AM"
+    },
+    {
+      "chatId": "62",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c xirpl",
+      "timestamp": "1/18/2025, 5:06:08 AM"
+    },
+    {
+      "chatId": "63",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c xirpl4",
+      "timestamp": "1/18/2025, 5:06:29 AM"
+    },
+    {
+      "chatId": "64",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c xirpl4",
+      "timestamp": "1/18/2025, 5:09:42 AM"
+    },
+    {
+      "chatId": "65",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c xirpl4",
+      "timestamp": "1/18/2025, 5:17:18 AM"
+    },
+    {
+      "chatId": "66",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "test",
+      "timestamp": "1/18/2025, 5:17:25 AM"
+    },
+    {
+      "chatId": "67",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c xirpl4",
+      "timestamp": "1/18/2025, 5:17:30 AM"
+    },
+    {
+      "chatId": "68",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j",
+      "timestamp": "1/18/2025, 5:18:00 AM"
+    },
+    {
+      "chatId": "69",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c",
+      "timestamp": "1/18/2025, 5:18:05 AM"
+    },
+    {
+      "chatId": "70",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c xirpl4",
+      "timestamp": "1/18/2025, 5:18:12 AM"
+    },
+    {
+      "chatId": "71",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c xirpl4",
+      "timestamp": "1/18/2025, 5:21:02 AM"
+    },
+    {
+      "chatId": "72",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c xirpl4",
+      "timestamp": "1/18/2025, 5:23:16 AM"
+    },
+    {
+      "chatId": "73",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c xirpl4",
+      "timestamp": "1/18/2025, 5:25:54 AM"
+    },
+    {
+      "chatId": "74",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "EASY",
+      "timestamp": "1/18/2025, 5:26:07 AM"
+    },
+    {
+      "chatId": "75",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",m",
+      "timestamp": "1/18/2025, 5:26:24 AM"
+    },
+    {
+      "chatId": "76",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "hehe",
+      "timestamp": "1/18/2025, 5:26:30 AM"
+    },
+    {
+      "chatId": "77",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c xirpl4",
+      "timestamp": "1/18/2025, 5:29:08 AM"
+    },
+    {
+      "chatId": "78",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c xirpl4",
+      "timestamp": "1/18/2025, 5:36:39 AM"
+    },
+    {
+      "chatId": "79",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j n xirpl4",
+      "timestamp": "1/18/2025, 5:36:46 AM"
+    },
+    {
+      "chatId": "80",
+      "userName": ". ~T~.",
+      "number": "6285751503581@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 5:42:19 AM"
+    },
+    {
+      "chatId": "81",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c xirpl4",
+      "timestamp": "1/18/2025, 5:47:27 AM"
+    },
+    {
+      "chatId": "82",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j n xirpl4",
+      "timestamp": "1/18/2025, 5:47:34 AM"
+    },
+    {
+      "chatId": "83",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl4 1",
+      "timestamp": "1/18/2025, 5:54:31 AM"
+    },
+    {
+      "chatId": "84",
+      "userName": "Royan",
+      "number": "6281278130147@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 6:09:45 AM"
+    },
+    {
+      "chatId": "85",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl 0",
+      "timestamp": "1/18/2025, 6:10:59 AM"
+    },
+    {
+      "chatId": "86",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl 7",
+      "timestamp": "1/18/2025, 6:11:10 AM"
+    },
+    {
+      "chatId": "87",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl 6",
+      "timestamp": "1/18/2025, 6:11:15 AM"
+    },
+    {
+      "chatId": "88",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl 5",
+      "timestamp": "1/18/2025, 6:11:20 AM"
+    },
+    {
+      "chatId": "89",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl 4",
+      "timestamp": "1/18/2025, 6:11:23 AM"
+    },
+    {
+      "chatId": "90",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl 1",
+      "timestamp": "1/18/2025, 6:11:43 AM"
+    },
+    {
+      "chatId": "91",
+      "userName": ".",
+      "number": "628886960244@c.us",
+      "content": ".tt https://vt.tiktok.com/ZS64nTvnw/",
+      "timestamp": "1/18/2025, 6:14:55 AM"
+    },
+    {
+      "chatId": "92",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*Sabar kak...*",
+      "timestamp": "1/18/2025, 6:14:56 AM"
+    },
+    {
+      "chatId": "93",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*[ Tiktok Downloader ]*\n\n- Id : 7460158005087358226\n- Username : riiiii302\n- Nickname : 𝕬𝖗𝖎𝖊🧿🪬\n- Type : video\n- CreateAt : 15/01/2025 22:03:15\n- Play : 706848\n- Download : 18\n- Share : 5066\n- Comment : 553\n- Like : 101391\n- Favourite : 10182\n- Description : #fypシ゚ #gamon #lewatberandafyp #galau",
+      "timestamp": "1/18/2025, 6:14:57 AM"
+    },
+    {
+      "chatId": "94",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl 1",
+      "timestamp": "1/18/2025, 6:16:46 AM"
+    },
+    {
+      "chatId": "95",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl4 1",
+      "timestamp": "1/18/2025, 6:18:19 AM"
+    },
+    {
+      "chatId": "96",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl3 1",
+      "timestamp": "1/18/2025, 6:18:30 AM"
+    },
+    {
+      "chatId": "97",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl 4 6",
+      "timestamp": "1/18/2025, 6:18:38 AM"
+    },
+    {
+      "chatId": "98",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl4 6",
+      "timestamp": "1/18/2025, 6:18:44 AM"
+    },
+    {
+      "chatId": "99",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl 4",
+      "timestamp": "1/18/2025, 6:18:49 AM"
+    },
+    {
+      "chatId": "100",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl4 4",
+      "timestamp": "1/18/2025, 6:19:00 AM"
+    },
+    {
+      "chatId": "101",
+      "userName": "sultanbolkiyah786",
+      "number": "6281345302871@c.us",
+      "content": "ditonton kawan \n\nhttps://youtu.be/SHB5vt3j3X0?si=tx5Xl5i1y_T1NxQT",
+      "timestamp": "1/18/2025, 6:21:02 AM"
+    },
+    {
+      "chatId": "102",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*@6281345302871 telah kembali dari afk selama*\n\n1 Day 23 Hours 36 Minutes 5 Seconds\n\n*Reason :* bundir Sabi kali",
+      "timestamp": "1/18/2025, 6:21:03 AM"
+    },
+    {
+      "chatId": "103",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j s xirpl4 3",
+      "timestamp": "1/18/2025, 6:23:32 AM"
+    },
+    {
+      "chatId": "104",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 6:23:46 AM"
+    },
+    {
+      "chatId": "105",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j c xirpl4",
+      "timestamp": "1/18/2025, 6:23:59 AM"
+    },
+    {
+      "chatId": "106",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",j n xirpl4",
+      "timestamp": "1/18/2025, 6:24:15 AM"
+    },
+    {
+      "chatId": "107",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "schedule feature, well its probablu useless, but i like it, lol",
+      "timestamp": "1/18/2025, 6:25:11 AM"
+    },
+    {
+      "chatId": "108",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",suit",
+      "timestamp": "1/18/2025, 6:26:18 AM"
+    },
+    {
+      "chatId": "109",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "@6285715377912 menantang @62895634600989 untuk bermain suitKirim 'y' untuk menerima, 't' untuk menolak",
+      "timestamp": "1/18/2025, 6:26:23 AM"
+    },
+    {
+      "chatId": "110",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "y",
+      "timestamp": "1/18/2025, 6:26:25 AM"
+    },
+    {
+      "chatId": "111",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "content": "Silahkan pilih salah satu\n\nKirim 'batu', 'gunting', atau 'kertas'",
+      "timestamp": "1/18/2025, 6:26:27 AM"
+    },
+    {
+      "chatId": "112",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Bot sudah mengirimkan suit ke private chat @62895634600989 & @6285715377912\n\nSilahkan cek private chat atau klik wa.me/62882006844990",
+      "timestamp": "1/18/2025, 6:26:28 AM"
+    },
+    {
+      "chatId": "113",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "content": "Kamu memilih kertas (✋)",
+      "timestamp": "1/18/2025, 6:26:35 AM"
+    },
+    {
+      "chatId": "114",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Hasil suit: @62895634600989 menang\n@62895634600989 ✌\n+$500balance\n+150XP\n@6285715377912 ✋\n-$100balance\n+50XP",
+      "timestamp": "1/18/2025, 6:26:37 AM"
+    },
+    {
+      "chatId": "115",
+      "userName": "PrinceRisky🦐",
+      "number": "6289523997679@c.us",
+      "content": ".afk",
+      "timestamp": "1/18/2025, 6:46:27 AM"
+    },
+    {
+      "chatId": "116",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "PrinceRisky🦐 Afk\n\nReason :",
+      "timestamp": "1/18/2025, 6:46:28 AM"
+    },
+    {
+      "chatId": "117",
+      "userName": "PrinceRisky🦐",
+      "number": "6289523997679@c.us",
+      "content": "Capek",
+      "timestamp": "1/18/2025, 6:46:35 AM"
+    },
+    {
+      "chatId": "118",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*@6289523997679 telah kembali dari afk selama*\n\n9 Seconds\n\n*Reason :*",
+      "timestamp": "1/18/2025, 6:46:37 AM"
+    },
+    {
+      "chatId": "119",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": ".me",
+      "timestamp": "1/18/2025, 6:46:47 AM"
+    },
+    {
+      "chatId": "120",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "╭────✎「 *User Info* 」\n│• Name: rafii\n│• Tag: @6288901635583\n│• Api: wa.me/6288901635583\n│• Status: Free\n│• Limit: 30/30\n│• Balance: 2387\n│• Level: 6\n│• Tier: Elite\n│• XP: 566/905\n│• Member since: 15/1/2025\n╰─────────❍",
+      "timestamp": "1/18/2025, 6:46:48 AM"
+    },
+    {
+      "chatId": "121",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": ".ping",
+      "timestamp": "1/18/2025, 6:46:51 AM"
+    },
+    {
+      "chatId": "122",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "`0.0090` second",
+      "timestamp": "1/18/2025, 6:46:54 AM"
+    },
+    {
+      "chatId": "123",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 6:47:01 AM"
+    },
+    {
+      "chatId": "124",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",suit",
+      "timestamp": "1/18/2025, 6:48:34 AM"
+    },
+    {
+      "chatId": "125",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "@6285715377912 menantang @62895634600989 untuk bermain suitKirim 'y' untuk menerima, 't' untuk menolak",
+      "timestamp": "1/18/2025, 6:48:51 AM"
+    },
+    {
+      "chatId": "126",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "y",
+      "timestamp": "1/18/2025, 6:48:54 AM"
+    },
+    {
+      "chatId": "127",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "content": "Silahkan pilih salah satu\n\nKirim 'batu', 'gunting', atau 'kertas'",
+      "timestamp": "1/18/2025, 6:48:56 AM"
+    },
+    {
+      "chatId": "128",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Bot sudah mengirimkan suit ke private chat @62895634600989 & @6285715377912\n\nSilahkan cek private chat atau klik wa.me/62882006844990",
+      "timestamp": "1/18/2025, 6:48:57 AM"
+    },
+    {
+      "chatId": "129",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "content": "Kamu memilih kertas (✋)",
+      "timestamp": "1/18/2025, 6:48:58 AM"
+    },
+    {
+      "chatId": "130",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Hasil suit: @62895634600989 menang\n@62895634600989 ✌\n+$500balance\n+150XP\n@6285715377912 ✋\n-$100balance\n+50XP",
+      "timestamp": "1/18/2025, 6:49:04 AM"
+    },
+    {
+      "chatId": "131",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ".me",
+      "timestamp": "1/18/2025, 6:49:08 AM"
+    },
+    {
+      "chatId": "132",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "╭────✎「 *User Info* 」\n│• Name: v4LUE\n│• Tag: @62895634600989\n│• Api: wa.me/62895634600989\n│• Status: Free\n│• Limit: 30/30\n│• Balance: 2937\n│• Level: 8\n│• Tier: Elite\n│• XP: 8/1561\n│• Member since: 15/1/2025\n╰─────────❍",
+      "timestamp": "1/18/2025, 6:49:10 AM"
+    },
+    {
+      "chatId": "133",
+      "userName": "Royan",
+      "number": "6281278130147@c.us",
+      "content": ".me",
+      "timestamp": "1/18/2025, 6:49:19 AM"
+    },
+    {
+      "chatId": "134",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "╭────✎「 *User Info* 」\n│• Name: Royan\n│• Tag: @6281278130147\n│• Api: wa.me/6281278130147\n│• Status: Free\n│• Limit: 30/30\n│• Balance: 4592\n│• Level: 8\n│• Tier: Elite\n│• XP: 908/1561\n│• Member since: 15/1/2025\n╰─────────❍",
+      "timestamp": "1/18/2025, 6:49:21 AM"
+    },
+    {
+      "chatId": "135",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": ".tebakgambar",
+      "timestamp": "1/18/2025, 6:49:34 AM"
+    },
+    {
+      "chatId": "136",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*[Tebak Gambar]*\n\nPetunjuk: \nGambar jamu, hiu, dan orang berlari.\n\nWaktu: 120 detik\nHadiah:\n- $94 balance\n- 51 XP",
+      "timestamp": "1/18/2025, 6:49:36 AM"
+    },
+    {
+      "chatId": "137",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": "jauhi ular",
+      "timestamp": "1/18/2025, 6:49:55 AM"
+    },
+    {
+      "chatId": "138",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Jawaban benar\n\nJawaban : JAUHI ULAR\nHadiah : \n- $94 balance\n- 51 XP\nDijawab dalam waktu : 19.848 detik",
+      "timestamp": "1/18/2025, 6:50:00 AM"
+    },
+    {
+      "chatId": "139",
+      "userName": "Royan",
+      "number": "6281278130147@c.us",
+      "content": ".math hard",
+      "timestamp": "1/18/2025, 6:50:28 AM"
+    },
+    {
+      "chatId": "140",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*[Math]*\n\nJawablah pertanyaan di bawah ini\n76 × -60\n\nWaktu: 60 detik\nHadiah:\n- $150 balance\n- 85 XP",
+      "timestamp": "1/18/2025, 6:50:29 AM"
+    },
+    {
+      "chatId": "141",
+      "userName": "Royan",
+      "number": "6281278130147@c.us",
+      "content": "-4560",
+      "timestamp": "1/18/2025, 6:50:44 AM"
+    },
+    {
+      "chatId": "142",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Jawaban benar\n\nJawaban : -4560\nHadiah : \n- $150 balance\n- 85 XP\nDijawab dalam waktu : 15.131 detik",
+      "timestamp": "1/18/2025, 6:50:45 AM"
+    },
+    {
+      "chatId": "143",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 6:50:55 AM"
+    },
+    {
+      "chatId": "144",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": ".tebakgambar",
+      "timestamp": "1/18/2025, 6:51:07 AM"
+    },
+    {
+      "chatId": "145",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*[Tebak Gambar]*\n\nPetunjuk: \nGambar anak belajar dan setir.\n\nWaktu: 120 detik\nHadiah:\n- $59 balance\n- 34 XP",
+      "timestamp": "1/18/2025, 6:51:09 AM"
+    },
+    {
+      "chatId": "146",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": "belajar setia",
+      "timestamp": "1/18/2025, 6:51:32 AM"
+    },
+    {
+      "chatId": "147",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Jawaban benar\n\nJawaban : BELAJAR SETIA\nHadiah : \n- $59 balance\n- 34 XP\nDijawab dalam waktu : 10.064 detik",
+      "timestamp": "1/18/2025, 6:51:37 AM"
+    },
+    {
+      "chatId": "148",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": ".tebakgambar",
+      "timestamp": "1/18/2025, 6:51:58 AM"
+    },
+    {
+      "chatId": "149",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*[Tebak Gambar]*\n\nPetunjuk: \nGambar huruf M, obor dan durian.\n\nWaktu: 120 detik\nHadiah:\n- $100 balance\n- 36 XP",
+      "timestamp": "1/18/2025, 6:51:59 AM"
+    },
+    {
+      "chatId": "150",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": "motor curian",
+      "timestamp": "1/18/2025, 6:52:02 AM"
+    },
+    {
+      "chatId": "151",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Jawaban benar\n\nJawaban : MOTOR CURIAN\nHadiah : \n- $100 balance\n- 36 XP\nDijawab dalam waktu : 14.074 detik",
+      "timestamp": "1/18/2025, 6:52:03 AM"
+    },
+    {
+      "chatId": "152",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": ".tebakgambar",
+      "timestamp": "1/18/2025, 6:52:04 AM"
+    },
+    {
+      "chatId": "153",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*[Tebak Gambar]*\n\nPetunjuk: \nGambar ikan cupang, dan bangun limas.\n\nWaktu: 120 detik\nHadiah:\n- $77 balance\n- 65 XP",
+      "timestamp": "1/18/2025, 6:52:06 AM"
+    },
+    {
+      "chatId": "154",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": "cucu panglima",
+      "timestamp": "1/18/2025, 6:52:06 AM"
+    },
+    {
+      "chatId": "155",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Jawaban benar\n\nJawaban : CUCU PANGLIMA\nHadiah : \n- $77 balance\n- 65 XP\nDijawab dalam waktu : 14.57 detik",
+      "timestamp": "1/18/2025, 6:52:07 AM"
+    },
+    {
+      "chatId": "156",
+      "userName": "Royan",
+      "number": "6281278130147@c.us",
+      "content": "Math impossible",
+      "timestamp": "1/18/2025, 6:52:10 AM"
+    },
+    {
+      "chatId": "157",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "nigga",
+      "timestamp": "1/18/2025, 6:52:11 AM"
+    },
+    {
+      "chatId": "158",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 6:52:12 AM"
+    },
+    {
+      "chatId": "159",
+      "userName": "Royan",
+      "number": "6281278130147@c.us",
+      "content": ".math impossible",
+      "timestamp": "1/18/2025, 6:52:16 AM"
+    },
+    {
+      "chatId": "160",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*[Math]*\n\nJawablah pertanyaan di bawah ini\n11361145996497780 ÷ -679\n\nWaktu: 30 detik\nHadiah:\n- $300 balance\n- 250 XP",
+      "timestamp": "1/18/2025, 6:52:17 AM"
+    },
+    {
+      "chatId": "161",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": ".tebakgambar",
+      "timestamp": "1/18/2025, 6:52:37 AM"
+    },
+    {
+      "chatId": "162",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Masih ada game yang blum kamu selesaikan",
+      "timestamp": "1/18/2025, 6:52:37 AM"
+    },
+    {
+      "chatId": "163",
+      "userName": "Royan",
+      "number": "6281278130147@c.us",
+      "content": "-16.790.257.161.085.940",
+      "timestamp": "1/18/2025, 6:52:42 AM"
+    },
+    {
+      "chatId": "164",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Waktu habis...\nJawaban : *-16732173779820*",
+      "timestamp": "1/18/2025, 6:52:47 AM"
+    },
+    {
+      "chatId": "165",
+      "userName": "Royan",
+      "number": "6281278130147@c.us",
+      "content": "Bruh",
+      "timestamp": "1/18/2025, 6:52:52 AM"
+    },
+    {
+      "chatId": "166",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": ".tebakgambar",
+      "timestamp": "1/18/2025, 6:52:58 AM"
+    },
+    {
+      "chatId": "167",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*[Tebak Gambar]*\n\nPetunjuk: \nGambar huruf FO, topi (dengan huruf K) dan naik tangga.\n\nWaktu: 120 detik\nHadiah:\n- $76 balance\n- 39 XP",
+      "timestamp": "1/18/2025, 6:52:59 AM"
+    },
+    {
+      "chatId": "168",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": ".nyerah",
+      "timestamp": "1/18/2025, 6:53:53 AM"
+    },
+    {
+      "chatId": "169",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Jawaban: FOTO PIKNIK",
+      "timestamp": "1/18/2025, 6:53:54 AM"
+    },
+    {
+      "chatId": "170",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": ".tebakgambar",
+      "timestamp": "1/18/2025, 6:54:25 AM"
+    },
+    {
+      "chatId": "171",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*[Tebak Gambar]*\n\nPetunjuk: \nGambar huruf MA, tangan terluka, dan tanda tanya.\n\nWaktu: 120 detik\nHadiah:\n- $52 balance\n- 42 XP",
+      "timestamp": "1/18/2025, 6:54:27 AM"
+    },
+    {
+      "chatId": "172",
+      "userName": "Glz",
+      "number": "6289666112403@c.us",
+      "content": ",suit",
+      "timestamp": "1/18/2025, 6:54:34 AM"
+    },
+    {
+      "chatId": "173",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "@6285715377912 menantang @6289666112403 untuk bermain suitKirim 'y' untuk menerima, 't' untuk menolak",
+      "timestamp": "1/18/2025, 6:54:38 AM"
+    },
+    {
+      "chatId": "174",
+      "userName": "Glz",
+      "number": "6289666112403@c.us",
+      "content": "y",
+      "timestamp": "1/18/2025, 6:54:38 AM"
+    },
+    {
+      "chatId": "175",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "content": "Silahkan pilih salah satu\n\nKirim 'batu', 'gunting', atau 'kertas'",
+      "timestamp": "1/18/2025, 6:54:39 AM"
+    },
+    {
+      "chatId": "176",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Bot sudah mengirimkan suit ke private chat @6289666112403 & @6285715377912\n\nSilahkan cek private chat atau klik wa.me/62882006844990",
+      "timestamp": "1/18/2025, 6:54:42 AM"
+    },
+    {
+      "chatId": "177",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "content": "Kamu memilih kertas (✋)",
+      "timestamp": "1/18/2025, 6:54:42 AM"
+    },
+    {
+      "chatId": "178",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Hasil suit: @6289666112403 menang\n@6289666112403 ✌\n+$500balance\n+150XP\n@6285715377912 ✋\n-$100balance\n+50XP",
+      "timestamp": "1/18/2025, 6:54:49 AM"
+    },
+    {
+      "chatId": "179",
+      "userName": "rafii",
+      "number": "6288901635583@c.us",
+      "content": "malu rasanya",
+      "timestamp": "1/18/2025, 6:54:50 AM"
+    },
+    {
+      "chatId": "180",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Jawaban benar\n\nJawaban : MALU RASANYA\nHadiah : \n- $52 balance\n- 42 XP\nDijawab dalam waktu : 22.552 detik",
+      "timestamp": "1/18/2025, 6:54:51 AM"
+    },
+    {
+      "chatId": "181",
+      "userName": "Glz",
+      "number": "6289666112403@c.us",
+      "content": ".math impossible",
+      "timestamp": "1/18/2025, 6:54:59 AM"
+    },
+    {
+      "chatId": "182",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*[Math]*\n\nJawablah pertanyaan di bawah ini\n524658031643192800 ÷ 601\n\nWaktu: 30 detik\nHadiah:\n- $300 balance\n- 250 XP",
+      "timestamp": "1/18/2025, 6:55:00 AM"
+    },
+    {
+      "chatId": "183",
+      "userName": "Glz",
+      "number": "6289666112403@c.us",
+      "content": ",get",
+      "timestamp": "1/18/2025, 6:55:02 AM"
+    },
+    {
+      "chatId": "184",
+      "userName": "Glz",
+      "number": "6289666112403@c.us",
+      "content": "872975094248241",
+      "timestamp": "1/18/2025, 6:55:12 AM"
+    },
+    {
+      "chatId": "185",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Jawaban benar\n\nJawaban : 872975094248241\nHadiah : \n- $300 balance\n- 250 XP\nDijawab dalam waktu : 12.774 detik",
+      "timestamp": "1/18/2025, 6:55:14 AM"
+    },
+    {
+      "chatId": "186",
+      "userName": "Glz",
+      "number": "6289666112403@c.us",
+      "content": ".math impossible",
+      "timestamp": "1/18/2025, 6:56:00 AM"
+    },
+    {
+      "chatId": "187",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*[Math]*\n\nJawablah pertanyaan di bawah ini\n-11221980283054260 ÷ -108\n\nWaktu: 30 detik\nHadiah:\n- $300 balance\n- 250 XP",
+      "timestamp": "1/18/2025, 6:56:01 AM"
+    },
+    {
+      "chatId": "188",
+      "userName": "Glz",
+      "number": "6289666112403@c.us",
+      "content": ",get",
+      "timestamp": "1/18/2025, 6:56:02 AM"
+    },
+    {
+      "chatId": "189",
+      "userName": "Glz",
+      "number": "6289666112403@c.us",
+      "content": "103907224843095",
+      "timestamp": "1/18/2025, 6:56:11 AM"
+    },
+    {
+      "chatId": "190",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Jawaban benar\n\nJawaban : 103907224843095\nHadiah : \n- $300 balance\n- 250 XP\nDijawab dalam waktu : 9.276 detik",
+      "timestamp": "1/18/2025, 6:56:12 AM"
+    },
+    {
+      "chatId": "191",
+      "userName": "Glz",
+      "number": "6289666112403@c.us",
+      "content": ".math impossible",
+      "timestamp": "1/18/2025, 6:56:36 AM"
+    },
+    {
+      "chatId": "192",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*[Math]*\n\nJawablah pertanyaan di bawah ini\n-135985526058589540 ÷ 914\n\nWaktu: 30 detik\nHadiah:\n- $300 balance\n- 250 XP",
+      "timestamp": "1/18/2025, 6:56:37 AM"
+    },
+    {
+      "chatId": "193",
+      "userName": "Glz",
+      "number": "6289666112403@c.us",
+      "content": ",get",
+      "timestamp": "1/18/2025, 6:56:38 AM"
+    },
+    {
+      "chatId": "194",
+      "userName": "Glz",
+      "number": "6289666112403@c.us",
+      "content": "-148780663083796",
+      "timestamp": "1/18/2025, 6:56:49 AM"
+    },
+    {
+      "chatId": "195",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Jawaban benar\n\nJawaban : -148780663083796\nHadiah : \n- $300 balance\n- 250 XP\nDijawab dalam waktu : 21.473 detik",
+      "timestamp": "1/18/2025, 6:56:50 AM"
+    },
+    {
+      "chatId": "196",
+      "userName": "Glz",
+      "number": "6289666112403@c.us",
+      "content": ".math impossible",
+      "timestamp": "1/18/2025, 6:58:38 AM"
+    },
+    {
+      "chatId": "197",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*[Math]*\n\nJawablah pertanyaan di bawah ini\n153706204502572930 ÷ 188\n\nWaktu: 30 detik\nHadiah:\n- $300 balance\n- 250 XP",
+      "timestamp": "1/18/2025, 6:58:39 AM"
+    },
+    {
+      "chatId": "198",
+      "userName": "Glz",
+      "number": "6289666112403@c.us",
+      "content": ",get",
+      "timestamp": "1/18/2025, 6:58:40 AM"
+    },
+    {
+      "chatId": "199",
+      "userName": "Glz",
+      "number": "6289666112403@c.us",
+      "content": "817586194162622",
+      "timestamp": "1/18/2025, 6:58:53 AM"
+    },
+    {
+      "chatId": "200",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Jawaban benar\n\nJawaban : 817586194162622\nHadiah : \n- $300 balance\n- 250 XP\nDijawab dalam waktu : 13.445 detik",
+      "timestamp": "1/18/2025, 6:58:54 AM"
+    },
+    {
+      "chatId": "201",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 7:14:23 AM"
+    },
+    {
+      "chatId": "202",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",p",
+      "timestamp": "1/18/2025, 9:07:07 AM"
+    },
+    {
+      "chatId": "203",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",p",
+      "timestamp": "1/18/2025, 9:07:15 AM"
+    },
+    {
+      "chatId": "204",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": ",help",
+      "timestamp": "1/18/2025, 9:07:21 AM"
+    },
+    {
+      "chatId": "205",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": ",say @6289666112403 lol",
+      "timestamp": "1/18/2025, 9:07:30 AM"
+    },
+    {
+      "chatId": "206",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",p",
+      "timestamp": "1/18/2025, 9:23:05 AM"
+    },
+    {
+      "chatId": "207",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 9:23:11 AM"
+    },
+    {
+      "chatId": "208",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",p",
+      "timestamp": "1/18/2025, 9:25:28 AM"
+    },
+    {
+      "chatId": "209",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 9:25:37 AM"
+    },
+    {
+      "chatId": "210",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",p",
+      "timestamp": "1/18/2025, 9:27:05 AM"
+    },
+    {
+      "chatId": "211",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 9:27:14 AM"
+    },
+    {
+      "chatId": "212",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 9:27:32 AM"
+    },
+    {
+      "chatId": "213",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",p",
+      "timestamp": "1/18/2025, 9:27:46 AM"
+    },
+    {
+      "chatId": "214",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 9:27:59 AM"
+    },
+    {
+      "chatId": "215",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",p",
+      "timestamp": "1/18/2025, 9:31:05 AM"
+    },
+    {
+      "chatId": "216",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 9:31:11 AM"
+    },
+    {
+      "chatId": "217",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",p",
+      "timestamp": "1/18/2025, 9:32:22 AM"
+    },
+    {
+      "chatId": "218",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 9:32:33 AM"
+    },
+    {
+      "chatId": "219",
+      "content": "",
+      "timestamp": "1/18/2025, 9:33:38 AM"
+    },
+    {
+      "chatId": "220",
+      "content": "",
+      "timestamp": "1/18/2025, 9:33:38 AM"
+    },
+    {
+      "chatId": "221",
+      "userName": "denn",
+      "content": ".menu",
+      "timestamp": "1/18/2025, 9:33:39 AM"
+    },
+    {
+      "chatId": "222",
+      "userName": "denn",
+      "content": ".ping",
+      "timestamp": "1/18/2025, 9:33:43 AM"
+    },
+    {
+      "chatId": "223",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",ping",
+      "timestamp": "1/18/2025, 9:35:38 AM"
+    },
+    {
+      "chatId": "224",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 9:35:42 AM"
+    },
+    {
+      "chatId": "225",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*>Ketik .toplocal sewajarnya , klw spam kick*\n*>Dilarang Share Foto Aib / Pas tidur Orang / Temen , tetep aja ngirim? Kena .warn 1×*\n\n*\"Kalau Donlod video ig / tt / dll bisa chat pribadi botnya\"* \n*Biar ni gc gk jdi tmpt donlod video*",
+      "timestamp": "1/18/2025, 9:36:15 AM"
+    },
+    {
+      "chatId": "226",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",ping",
+      "timestamp": "1/18/2025, 9:38:04 AM"
+    },
+    {
+      "chatId": "227",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",p",
+      "timestamp": "1/18/2025, 9:38:07 AM"
+    },
+    {
+      "chatId": "228",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 9:38:11 AM"
+    },
+    {
+      "chatId": "229",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 9:38:24 AM"
+    },
+    {
+      "chatId": "230",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 9:40:19 AM"
+    },
+    {
+      "chatId": "231",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ".smeme bucat",
+      "timestamp": "1/18/2025, 10:31:35 AM"
+    },
+    {
+      "chatId": "232",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ".s",
+      "timestamp": "1/18/2025, 10:31:35 AM"
+    },
+    {
+      "chatId": "233",
+      "userName": "🗿",
+      "number": "6285724563243@c.us",
+      "content": ".ping",
+      "timestamp": "1/18/2025, 10:31:36 AM"
+    },
+    {
+      "chatId": "234",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "`0.0053` second",
+      "timestamp": "1/18/2025, 10:31:38 AM"
+    },
+    {
+      "chatId": "235",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "cb tebak",
+      "timestamp": "1/18/2025, 10:31:38 AM"
+    },
+    {
+      "chatId": "236",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "ok nais",
+      "timestamp": "1/18/2025, 10:32:06 AM"
+    },
+    {
+      "chatId": "237",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",p",
+      "timestamp": "1/18/2025, 10:32:15 AM"
+    },
+    {
+      "chatId": "238",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",help",
+      "timestamp": "1/18/2025, 10:32:18 AM"
+    },
+    {
+      "chatId": "239",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",credit",
+      "timestamp": "1/18/2025, 10:32:22 AM"
+    },
+    {
+      "chatId": "240",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "!math 1+1+1",
+      "timestamp": "1/18/2025, 10:32:28 AM"
+    },
+    {
+      "chatId": "241",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",get",
+      "timestamp": "1/18/2025, 10:32:28 AM"
+    },
+    {
+      "chatId": "242",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",suit",
+      "timestamp": "1/18/2025, 10:32:37 AM"
+    },
+    {
+      "chatId": "243",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 10:32:49 AM"
+    },
+    {
+      "chatId": "244",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "!math 1+1",
+      "timestamp": "1/18/2025, 10:33:30 AM"
+    },
+    {
+      "chatId": "245",
+      "userName": "Samuel",
+      "number": "6283875698091@c.us",
+      "content": "_Result:_: 1+1 = 11",
+      "timestamp": "1/18/2025, 10:33:32 AM"
+    },
+    {
+      "chatId": "246",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "lemaw",
+      "timestamp": "1/18/2025, 10:33:38 AM"
+    },
+    {
+      "chatId": "247",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ".\n.\n.\n829-837÷182+9191*10",
+      "timestamp": "1/18/2025, 10:35:23 AM"
+    },
+    {
+      "chatId": "248",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",get",
+      "timestamp": "1/18/2025, 10:35:25 AM"
+    },
+    {
+      "chatId": "249",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "!math 1+1",
+      "timestamp": "1/18/2025, 10:35:32 AM"
+    },
+    {
+      "chatId": "250",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ".math impossible",
+      "timestamp": "1/18/2025, 10:35:39 AM"
+    },
+    {
+      "chatId": "251",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "*[Math]*\n\nJawablah pertanyaan di bawah ini\n-2827830245893275 ÷ -581\n\nWaktu: 30 detik\nHadiah:\n- $300 balance\n- 250 XP",
+      "timestamp": "1/18/2025, 10:35:39 AM"
+    },
+    {
+      "chatId": "252",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",get",
+      "timestamp": "1/18/2025, 10:35:47 AM"
+    },
+    {
+      "chatId": "253",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "4867177703775",
+      "timestamp": "1/18/2025, 10:36:07 AM"
+    },
+    {
+      "chatId": "254",
+      "userName": "𝐌𝐚𝐫𝐜𝐨𝐬 𝐃𝐞 𝐁𝐨𝐭 - Menuju lebih baik",
+      "number": "62882006844990@c.us",
+      "content": "Jawaban benar\n\nJawaban : 4867177703775\nHadiah : \n- $300 balance\n- 250 XP\nDijawab dalam waktu : 27.628 detik",
+      "timestamp": "1/18/2025, 10:36:09 AM"
+    },
+    {
+      "chatId": "255",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "*[Math]*\n\nJawablah pertanyaan di bawah ini\n837282828÷2828*19192\n\nWaktu: 30 detik\nHadiah:\n- $300 balance\n- 250 XP",
+      "timestamp": "1/18/2025, 10:36:39 AM"
+    },
+    {
+      "chatId": "256",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",gey",
+      "timestamp": "1/18/2025, 10:36:43 AM"
+    },
+    {
+      "chatId": "257",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",get",
+      "timestamp": "1/18/2025, 10:36:44 AM"
+    },
+    {
+      "chatId": "258",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "lmao",
+      "timestamp": "1/18/2025, 10:36:49 AM"
+    },
+    {
+      "chatId": "259",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "!math 10+1+2",
+      "timestamp": "1/18/2025, 10:42:00 AM"
+    },
+    {
+      "chatId": "260",
+      "userName": "Samuel",
+      "number": "6283875698091@c.us",
+      "content": "_Result:_: 10+1+2 = 13",
+      "timestamp": "1/18/2025, 10:42:01 AM"
+    },
+    {
+      "chatId": "261",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "!math 1+ 10+ 2",
+      "timestamp": "1/18/2025, 10:42:10 AM"
+    },
+    {
+      "chatId": "262",
+      "userName": "Samuel",
+      "number": "6283875698091@c.us",
+      "content": "_Result:_: 1+ 10+ 2 = 13",
+      "timestamp": "1/18/2025, 10:42:10 AM"
+    },
+    {
+      "chatId": "263",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "noice",
+      "timestamp": "1/18/2025, 10:42:13 AM"
+    },
+    {
+      "chatId": "264",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "!math 10+-2",
+      "timestamp": "1/18/2025, 10:42:18 AM"
+    },
+    {
+      "chatId": "265",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "monyet",
+      "timestamp": "1/18/2025, 10:42:23 AM"
+    },
+    {
+      "chatId": "266",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "!math 10 + -2",
+      "timestamp": "1/18/2025, 10:42:30 AM"
+    },
+    {
+      "chatId": "267",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "!math 10 + 2",
+      "timestamp": "1/18/2025, 10:42:34 AM"
+    },
+    {
+      "chatId": "268",
+      "userName": "Samuel",
+      "number": "6283875698091@c.us",
+      "content": "_Result:_: 10 + 2 = 12",
+      "timestamp": "1/18/2025, 10:42:35 AM"
+    },
+    {
+      "chatId": "269",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "!math 10 - 2 - 3 + 4 - 2",
+      "timestamp": "1/18/2025, 10:42:42 AM"
+    },
+    {
+      "chatId": "270",
+      "userName": "Samuel",
+      "number": "6283875698091@c.us",
+      "content": "_Result:_: 10 - 2 - 3 + 4 - 2 = 7",
+      "timestamp": "1/18/2025, 10:42:43 AM"
+    },
+    {
+      "chatId": "271",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "noice",
+      "timestamp": "1/18/2025, 10:42:47 AM"
+    },
+    {
+      "chatId": "272",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",p",
+      "timestamp": "1/18/2025, 10:50:02 AM"
+    },
+    {
+      "chatId": "273",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 10:50:10 AM"
+    },
+    {
+      "chatId": "274",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 10:58:37 AM"
+    },
+    {
+      "chatId": "275",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 10:58:49 AM"
+    },
+    {
+      "chatId": "276",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",p",
+      "timestamp": "1/18/2025, 11:07:29 AM"
+    },
+    {
+      "chatId": "277",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",p",
+      "timestamp": "1/18/2025, 11:07:35 AM"
+    },
+    {
+      "chatId": "278",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": ",lastmedia",
+      "timestamp": "1/18/2025, 11:07:41 AM"
+    },
+    {
+      "chatId": "279",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "!math 1+2+3+4",
+      "timestamp": "1/18/2025, 11:07:42 AM"
+    },
+    {
+      "chatId": "280",
+      "userName": "Samuel",
+      "number": "6283875698091@c.us",
+      "content": "_Result:_: 1+2+3+4 = 10",
+      "timestamp": "1/18/2025, 11:07:43 AM"
+    },
+    {
+      "chatId": "281",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "rizz",
+      "timestamp": "1/18/2025, 11:07:47 AM"
+    },
+    {
+      "chatId": "282",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "goattt",
+      "timestamp": "1/18/2025, 11:07:51 AM"
+    },
+    {
+      "chatId": "283",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "bagi functionna cing",
+      "timestamp": "1/18/2025, 11:07:53 AM"
+    },
+    {
+      "chatId": "284",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "wait",
+      "timestamp": "1/18/2025, 11:08:00 AM"
+    },
+    {
+      "chatId": "285",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": ",lastmedia",
+      "timestamp": "1/18/2025, 11:08:41 AM"
+    },
+    {
+      "chatId": "286",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "rizz parah",
+      "timestamp": "1/18/2025, 11:08:43 AM"
+    },
+    {
+      "chatId": "287",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "",
+      "timestamp": "1/18/2025, 11:08:59 AM"
+    },
+    {
+      "chatId": "288",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": ",lastmedia",
+      "timestamp": "1/18/2025, 11:09:03 AM"
+    },
+    {
+      "chatId": "289",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "wow",
+      "timestamp": "1/18/2025, 11:09:07 AM"
+    },
+    {
+      "chatId": "290",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "sigema",
+      "timestamp": "1/18/2025, 11:09:08 AM"
+    },
+    {
+      "chatId": "291",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "ahh yess fucking lesgo baby",
+      "timestamp": "1/18/2025, 11:09:22 AM"
+    },
+    {
+      "chatId": "292",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "btw",
+      "timestamp": "1/18/2025, 11:09:24 AM"
+    },
+    {
+      "chatId": "293",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "mending maneh liat repo urg, soalna ini aya function buat-",
+      "timestamp": "1/18/2025, 11:09:41 AM"
+    },
+    {
+      "chatId": "294",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "msg.hasMedia -> ( saves media )\n\nexternal js function",
+      "timestamp": "1/18/2025, 11:10:04 AM"
+    },
+    {
+      "chatId": "295",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "agak pusing kalo ngecopy",
+      "timestamp": "1/18/2025, 11:10:18 AM"
+    },
+    {
+      "chatId": "296",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "@6282317388281 cara mere access ka batur di repo private kumaha",
+      "timestamp": "1/18/2025, 11:11:26 AM"
+    },
+    {
+      "chatId": "297",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "urg rek di private keun",
+      "timestamp": "1/18/2025, 11:11:34 AM"
+    },
+    {
+      "chatId": "298",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "private ken hela trs bere acces ka user",
+      "timestamp": "1/18/2025, 11:12:59 AM"
+    },
+    {
+      "chatId": "299",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "ngke bakalan dikirim lewat email",
+      "timestamp": "1/18/2025, 11:13:06 AM"
+    },
+    {
+      "chatId": "300",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "wait",
+      "timestamp": "1/18/2025, 11:14:10 AM"
+    },
+    {
+      "chatId": "301",
+      "userName": "v4LUE",
+      "number": "62895634600989@c.us",
+      "content": "send usn/email coba",
+      "timestamp": "1/18/2025, 11:20:03 AM"
+    },
+    {
+      "chatId": "302",
+      "userName": "Isonas Samuel",
+      "number": "6282317388281@c.us",
+      "content": "pbr2has@gmail.com",
+      "timestamp": "1/18/2025, 11:21:04 AM"
+    }
+  ]
+}

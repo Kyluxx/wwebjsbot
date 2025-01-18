@@ -1,0 +1,24 @@
+{
+    "classes": {
+        "xirpl4": {
+            "Monday": ["PWPB", "Bahasa Jepang", "PAI", "PJOK", "PPLG"],
+            "Tuesday": ["Bahasa Inggris", "PBTGM 2", "PPKN", "Bahasa Indonesia"],
+            "Wednesday": ["PWPB", "Bahasa Sunda", "Basis Data", "Matematika"],
+            "Thursday": ["PW", "PPLG", "BK", "PBTGM 2", "PPB", "KWU"],
+            "Friday": ["Prod. Kreatif", "PPB", "PBTGM 1", "PBTGM 2", "Sejindo"],
+            "Saturday": ["Its Saturday a.k.a weekend, enjoy!"],
+            "Sunday": ["Its Sunday a.k.a weekend, enjoy!"]
+        },
+        "xirpl3": {
+            "Monday": ["Art 10:00 AM"],
+            "Tuesday": ["Biology 9:00 AM"],
+            "Wednesday": [],
+            "Thursday": ["Chemistry 1:00 PM"],
+            "Friday": [],
+            "Saturday": ["Its Sunday a.k.a weekend, enjoy!"],
+            "Sunday": ["Its Sunday a.k.a weekend, enjoy!"]
+        }
+    }
+}
+
+  
