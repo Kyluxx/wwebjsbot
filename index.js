@@ -10,15 +10,23 @@ let started = false;
 let uptime;
 let fallbackOn = false;
 let lastDeletedMsg = { notifyName: null, msg: null };
+let savemsg = false;
+let autotrigger = false;
+let waitingQuestion = false;
+let atChat;
+let inter;
 
 const cli = new Client({
     restartOnAuthFail: true,
+    /*
     webVersionCache: {
         type: "remote",
-        remotePath: "https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/2.2410.1.html",
+        remotePath: "https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/2.3000.1019422050-alpha.html",
     },
+    */
     puppeteer: {
-        headless: true,
+        headless: false,
+        /*
         args: [
             "--no-sandbox",
             "--disable-setuid-sandbox",
@@ -29,6 +37,8 @@ const cli = new Client({
             "--single-process",
             "--disable-gpu",
         ],
+        */
+        executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
     },
     authStrategy: new LocalAuth(),
 });
@@ -39,7 +49,7 @@ const sendFallbackMessage = (msg) => {
     msg.reply(fallbackMessage);
 };
 
-const handleCommandReplies = (msg, command, data) => {
+const handleCommandReplies = (msg, command, data, chat) => {
     if (commandReplies[command]) {
         msg.reply(commandReplies[command](data));
     }
@@ -65,25 +75,15 @@ cli.on('message', async (msg) => {
 
     if (msg.timestamp - uptime <= 5) return;
 
-    console.log("Received Message Object:", JSON.stringify(msg, null, 2));
+    //console.log("Received Message Object:", JSON.stringify(msg, null, 2));
 
     const chat = await msg.getChat();
+    console.log(chat);
     const data = msg.body.trim();
     const res = data.split(' ');
     const command = res[0];
 
     console.log(`Received msg body: ${msg.body}`);
-
-    if (msg.hasMedia) {
-        const media = await msg.downloadMedia();
-        saveMedia(media);
-    }
-
-    const saveDat = {
-        userName: msg._data.notifyName,
-        number: msg.author,
-        content: data,
-    };
 
     if (chat.isGroup) {
         console.log('This message is from a group.');
@@ -92,6 +92,7 @@ cli.on('message', async (msg) => {
         if (mentions.length > 0) {
             console.log('Mentions:', mentions);
         }
+        
 
         switch (command) {
             case ',get':
@@ -113,12 +114,14 @@ cli.on('message', async (msg) => {
                 break;
 
             case ',m':
-                let text = '';
-                const mentioned = chat.participants.map(p => {
-                    text += `@${p.id.user} `;
-                    return `${p.id.user}@c.us`;
-                });
-                await chat.sendMessage(text, { mentions: mentioned });
+                if(whiteList[msg.author]){
+                    let text = '';
+                    const mentioned = chat.participants.map(p => {
+                        text += `@${p.id.user} `;
+                        return `${p.id.user}@c.us`;
+                    });
+                    await chat.sendMessage(text, { mentions: mentioned });
+                }
                 break;
 
             case ',suit':
@@ -127,9 +130,7 @@ cli.on('message', async (msg) => {
                     const cus = `${numAuthor}@c.us`;
                     const cmd = `.suit @${numAuthor}`;
                     await chat.sendMessage(cmd, { mentions: [cus] });
-                } else {
-                    msg.reply("> Automated Answer \n \n _You do not have access to this feature._ \n \n *Sike.*");
-                }
+                } 
                 break;
 
             case ',bb':
@@ -140,9 +141,7 @@ cli.on('message', async (msg) => {
                     } else {
                         msg.reply("> Automated Message \n \n _Buy number cannot be less than 1_" );
                     }
-                } else {
-                    msg.reply("> Automated Answer \n \n _You do not have access to this feature._ \n \n *Sike.*");
-                }
+                } 
                 break;
 
             case ',j':
@@ -160,14 +159,64 @@ cli.on('message', async (msg) => {
                 }
                 break;
             case ',lastmedia':
-                const mediaData = getLastMediaData();
-                const mediaBase64 = new MessageMedia(`${mediaData.mimetype}`, `${mediaData.data}`);
-                await cli.sendMessage(msg.from, mediaBase64);
+                if(whiteList[msg.author]){
+                    const mediaData = getLastMediaData();
+                    const mediaBase64 = new MessageMedia(`${mediaData.mimetype}`, `${mediaData.data}`);
+                    await cli.sendMessage(
+                        msg.from, 
+                        mediaBase64, 
+                        {   
+                            isViewOnce: (res[1] ? res[1] === 'vo' ? true : false : false),
+                            caption: (res[1] ? res[1] === 'vo' ? res[2] ? res[2] : null : res[1] : null),
+                            sendMediaAsSticker: (res[1] ? res[1] === 's' ? true : false : false),
+                        });
+                }
+                break;
+            case ',s':
+                if(whiteList[msg.author]){
+                    console.log(msg.hasMedia);
+                    if(msg.hasMedia){
+                        const mediaData = await msg.downloadMedia();
+                        const mediaBase64 = new MessageMedia(`${mediaData.mimetype}`, `${mediaData.data}`);
+                        await cli.sendMessage(
+                            msg.from, 
+                            mediaBase64, 
+                            {   
+                            sendMediaAsSticker: true,
+                            });
+                    }
+                }
+                break;
+            case ',svmedia':
+                if(whiteList[msg.author]){
+                    if (msg.hasMedia) {
+                        const media = await msg.downloadMedia();
+                        saveMedia(media);
+                    }else{
+                        msg.reply("No media found.");
+                    }
+                }
+                break;
+            case ',startm':
+                if(whiteList[msg.author]){
+                    atChat = msg.from;
+                    inter = setInterval(async () => {
+                        if(!waitingQuestion){
+                            waitingQuestion = true;
+                            await cli.sendMessage(atChat,".math impossible");
+                        }
+                    }, 1000);
+                }
+                break;
+            case ',stopm':
+                if(whiteList[msg.author]){
+                    clearInterval(inter);
+                }
                 break;
         }
     }
 
-    handleCommandReplies(msg, command, data);
+    handleCommandReplies(msg, command, data, chat);
 
     if (command === ',fallback') {
         fallbackOn ? sendFallbackMessage(msg) : msg.reply('> Fallback is deactivated.');
@@ -179,7 +228,39 @@ cli.on('message', async (msg) => {
         msg.reply('> Fallback is now deactivated.');
     }
 
-    saveChatLog(saveDat);
+    if(command === ',savemdaton' && whiteList[msg.author]){
+        savemsg = true;
+        msg.reply('> Save msg data is now on.');
+    }else if(command === ',savemdatoff' && whiteList[msg.author]){
+        savemsg = false;
+        msg.reply('> Save msg data is now off.');
+    }
+
+
+
+    
+    if(waitingQuestion === true){
+        const qlines = msg._data.body?.split('\n');
+        console.log(qlines);
+        if (qlines != undefined) {
+            if(qlines[3]?.match(/-?\d+\s[÷×+\-*/]\s-?\d+/)){
+                const ans = mathSolver(qlines[3]);
+                setTimeout(() => {msg.reply(`${ans.answer}`); waitingQuestion = false;}, 15000);
+            }
+        }
+    }else if(command === ',savemdatoff' && whiteList[msg.author]){
+        savemsg = false;
+        msg.reply('> Save msg data is now off.');
+    }
+
+    if(savemsg === true){
+        const saveDat = {
+            userName: msg._data.notifyName,
+            number: msg.author,
+            content: data,
+        };
+        saveChatLog(saveDat);
+    }
 });
 
 cli.on('message_revoke_everyone', async (message, revoked_msg) => {
@@ -195,13 +276,16 @@ cli.on('vote_update', (data) => {
 
 const commandReplies = {
     ',p': () => "Pong!",
-    ',help': () => "> Bot in Development \n *,credit* -> Information about this bot \n *,help* -> Command help \n *,p* -> Ping bot \n *,say <@tag> <msg>* -> Yapping",
+    ',help': () => "> Bot in Development \n *,credit* -> Information about this bot \n *,help* -> Command help \n *,p* -> Ping bot \n \n> Authorized CMD \n _Hidden for now._",
     ',credit': () => '> Bot Information \n _Author_ : @Kyluxx && @Sam \n _Supported by_ : @wwebjs',
+    'Silahkan': (chat) => {
+        if(!chat.isGroup){return "gunting"}
+    },
 };
 
 const whiteList = {
     "62895634600989@c.us": true,
-    "6289666112403@c.us": true,
+    //"6289666112403@c.us": true,
 };
 
 cli.initialize();
