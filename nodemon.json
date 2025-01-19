@@ -1,6 +1,6 @@
 {
     "watch": ["*.js"],
-    "ignore": ["logs/*", "*.json"],
+    "ignore": ["logs/*", "*.json", "forFileTest/*"],
     "ext": "js,json"
   }
   

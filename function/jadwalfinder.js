@@ -48,11 +48,14 @@ function getSpecifiedDay(day, classname) {
   
 
 // Example usage
+/*
 console.log(getCurrentDay('xirpl4')); // Output: Array or null
 console.log(getNextDay('ClassA'));    // Output: Array or null
 
   
   console.log(getCurrentDay()); // Example: "Friday"
+*/
+
 
 export { getCurrentDay, getNextDay, getSpecifiedDay };
   

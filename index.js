@@ -18,15 +18,40 @@ let inter;
 
 const cli = new Client({
     restartOnAuthFail: true,
-    /*
+    /*webVersionCache: {
+        type: "remote",
+        remotePath:
+          "https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/2.3000.1019422050-alpha.html",
+      },*/
+      puppeteer: {
+        headless: true,
+        args: [
+          "--no-sandbox",
+          "--disable-setuid-sandbox",
+          "--disable-dev-shm-usage",
+          "--disable-accelerated-2d-canvas",
+          "--no-first-run",
+          "--no-zygote",
+          "--single-process", 
+          "--disable-gpu",
+        ],
+      },
+      authStrategy: new LocalAuth(),
+});
+
+/*
+const cli = new Client({
+    restartOnAuthFail: true,
+    
     webVersionCache: {
         type: "remote",
         remotePath: "https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/2.3000.1019422050-alpha.html",
     },
-    */
+    
     puppeteer: {
-        headless: false,
-        /*
+        //headless: false,
+        headless: true,
+        
         args: [
             "--no-sandbox",
             "--disable-setuid-sandbox",
@@ -37,11 +62,12 @@ const cli = new Client({
             "--single-process",
             "--disable-gpu",
         ],
-        */
-        executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
+        
+        //executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
     },
     authStrategy: new LocalAuth(),
 });
+*/
 
 // Utility to reply with fallback message
 const sendFallbackMessage = (msg) => {
@@ -211,6 +237,20 @@ cli.on('message', async (msg) => {
             case ',stopm':
                 if(whiteList[msg.author]){
                     clearInterval(inter);
+                }
+                break;
+            case ',g':
+                if(whiteList[msg.author]){
+                    let formatText =
+`> Group Information \n
+_Group name:_ ${chat.groupMetadata.subject}
+_Created By:_ @${chat.groupMetadata.owner?.user ||  chat.groupMetadata.descOwner?.user}
+_Created at:_ ${new Date(chat.groupMetadata.creation * 1000).toLocaleString("id-ID", {
+timeZone: "Asia/Jakarta",
+})}
+_Total member:_ ${chat.groupMetadata.size}`;
+
+                      msg.reply(formatText);
                 }
                 break;
         }

@@ -23,7 +23,12 @@
   },
   "homepage": "https://github.com/Kyluxx/wwebjsbot#readme",
   "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "qrcode-terminal": "^0.12.0",
     "whatsapp-web.js": "^1.26.1-alpha.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
   }
 }
