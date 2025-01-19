@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "null",
-    "run": "nodemon index.js",
-    "dev": "nodemon index.js"
+    "run": "node index.js",
+    "dev": "nodemon index.js",
+    "del": "rimraf .wwebjs_auth && rimraf .wwebjs_cache"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "whatsapp-web.js": "^1.26.1-alpha.3"
   },
   "devDependencies": {
-    "@types/express": "^5.0.0"
+    "@types/express": "^5.0.0",
+    "rimraf": "^6.0.1"
   }
 }
