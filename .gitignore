@@ -1,3 +1,5 @@
 node_modules/
 .env
 forFileTest/
+.wwebjs_auth/
+.wwebjs_cache/
