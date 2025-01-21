@@ -89,6 +89,7 @@ let state = {
     waitingQuestion: false,
     atChat: null,
     inter: null,
+    pend: false,
 };
 
 const commandDocs = {
@@ -156,6 +157,8 @@ const commandDocs = {
         { cmd: ',tf <int>', desc: null },
         { cmd: ',grantadm <mention>', desc: null },
         { cmd: ',rmadm <mention>', desc: null },
+        { cmd: ',pend', desc: null },
+        { cmd: ',continue', desc: null },
     ]
 };
 
@@ -254,6 +257,18 @@ const checkPermission = (userId, level) => {
 
 
 client.on('message', async msg => {
+    
+    if(msg.body === ',continue'){
+        if(!(checkPermission((msg.author === undefined ? msg.from : msg.author), 'superAdmin'))) {
+            msg.reply("> Unauthorized commands");
+            return;
+        } 
+        state.pend = false;
+        msg.reply("> CMDs will be continued.");
+    }
+
+    if(state.false) return;
+
     let t = Date.now();
     console.log('MESSAGE RECEIVED', msg);
     state.lastChat = msg;
@@ -288,9 +303,12 @@ client.on('message', async msg => {
         if (msg.body === ',ping reply') {
             // Send a new message as a reply to the current one
             await msg.reply('pong');
-        } else if (msg.body === ',help') {
-            await client.sendMessage(msg.from, `${generatePerm()}`);
         } else if (msg.body === ',checkperm') {
+            await client.sendMessage(msg.from, `${generatePerm()}`);
+        } else if (msg.body === ',pend') {
+            state.pend = true;
+            await msg.reply(`CMDs will be paused.`);
+        } else if (msg.body === ',help') {
             await msg.reply(`${generateHelp()}`);
         } else if (msg.body.startsWith(',grantadm') || msg.body.startsWith(',rmadm')) {
             if(!(checkPermission((msg.author === undefined ? msg.from : msg.author), 'superAdmin'))) {
