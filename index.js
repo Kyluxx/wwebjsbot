@@ -291,7 +291,8 @@ client.on('message', async msg => {
                     setTimeout(async() => {
                         state.waitingQuestion = false;
                         if(state.tfc > 30){
-                            await client.sendMessage(msg.author, `.tfbalance 62895634600989 30000`);
+                            state.tfc = 0;  
+                            await client.sendMessage(msg.author, `.tfbalance 62895634600989 5000`);
                         }
                     }, 2000);
                 }, 1);
