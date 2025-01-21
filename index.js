@@ -261,23 +261,25 @@ client.on('message', async msg => {
         return;
     }
 
+    if(state.waitingQuestion === true){
+        const qlines = msg._data.body?.split('\n');
+        console.log(qlines);
+        if (qlines != undefined) {
+            if(qlines[3]?.match(/-?\d+\s[÷×+\-*/]\s-?\d+/)){
+                const ans = mathSolver(qlines[3]);
+                setTimeout(async () => {await msg.reply(`${ans.answer}`); setTimeout(async() => {state.waitingQuestion = false}, 1);}, 1);
+            }else if(qlines[0] === 'Maaf limit harian kamu sudah habis, beli premium untuk mendapatkan limit Unlimited, atau kamu dapat menunggu reset limit pada pukul 05.05 setiap harinya'){
+                setTimeout(async () => {await msg.reply(`.buylimit 30`); setTimeout(async() => {state.waitingQuestion = false}, 1)}, 1);
+            }else if(qlines[0] === 'Masih ada game yang blum kamu selesaikan'){
+                setTimeout(async () => {state.waitingQuestion = false}, 1);
+            }
+        }
+    }
+
     try {
         if (msg.body === ',ping reply') {
             // Send a new message as a reply to the current one
             await msg.reply('pong');
-        }else if(state.waitingQuestion === true){
-            const qlines = msg._data.body?.split('\n');
-            console.log(qlines);
-            if (qlines != undefined) {
-                if(qlines[3]?.match(/-?\d+\s[÷×+\-*/]\s-?\d+/)){
-                    const ans = mathSolver(qlines[3]);
-                    setTimeout(async () => {await msg.reply(`${ans.answer}`); setTimeout(async() => {state.waitingQuestion = false}, 1);}, 1);
-                }else if(qlines[0] === 'Maaf limit harian kamu sudah habis, beli premium untuk mendapatkan limit Unlimited, atau kamu dapat menunggu reset limit pada pukul 05.05 setiap harinya'){
-                    setTimeout(async () => {await msg.reply(`.buylimit 30`); setTimeout(async() => {state.waitingQuestion = false}, 1)}, 1);
-                }else if(qlines[0] === 'Masih ada game yang blum kamu selesaikan'){
-                    setTimeout(async () => {state.waitingQuestion = false}, 1);
-                }
-            }
         } else if (msg.body === ',help') {
             await client.sendMessage(msg.from, `${generateHelp()}`);
         } else if (msg.body === ',checkperm') {
