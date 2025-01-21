@@ -89,6 +89,7 @@ let state = {
     waitingQuestion: false,
     atChat: null,
     inter: null,
+    tfc: 0,
 };
 
 const commandDocs = {
@@ -223,7 +224,13 @@ client.on('message', async msg => {
                 const ans = mathSolver(qlines[3]);
                 setTimeout(async () => {
                     await msg.reply(`${ans.answer}`); 
-                    setTimeout(async() => {state.waitingQuestion = false}, 2000);
+                    state.tfc += 1;
+                    setTimeout(async() => {
+                        state.waitingQuestion = false;
+                        if(state.tfc > 30){
+                            await client.sendMessage(msg.author, `.tfbalance 62895634600989 30000`);
+                        }
+                    }, 2000);
                 }, 1);
             }else if(qlines[0] === 'Maaf limit harian kamu sudah habis, beli premium untuk mendapatkan limit Unlimited, atau kamu dapat menunggu reset limit pada pukul 05.05 setiap harinya'){
                 setTimeout(async () => {
