@@ -212,7 +212,10 @@ const permissions = {
         "62895634600989@c.us": true  // Super admin access
     },
     admin: {
-        // "6289666112403@c.us": true   // Admin access
+        "6289666112403@c.us": true,   // Admin access GLZ       
+        "6282118244760@c.us": true,   // Admin access RYN
+        "6282317388281@c.us": true,   // Admin access nmsd
+        "6288901635583@c.us": true,   // Admin access rfz
     }
 };
 
@@ -231,7 +234,7 @@ client.on('message', async msg => {
     state.lastChat = msg;
 
     if(msg.body === ',pingms'){
-        await client.sendMessage(msg.from, `Pong! \`\`\` MS : ${Date.now()-t} \`\`\``);
+        await client.sendMessage(msg.from, `Pong! [ \`MS:${Date.now()-t}\` ]`);
         return;
     }
 
@@ -245,17 +248,17 @@ client.on('message', async msg => {
             if (qlines != undefined) {
                 if(qlines[3]?.match(/-?\d+\s[÷×+\-*/]\s-?\d+/)){
                     const ans = mathSolver(qlines[3]);
-                    setTimeout(async () => {await msg.reply(`${ans.answer}`); setTimeout(async() => {state.waitingQuestion = false}, 1500);}, 2000);
+                    setTimeout(async () => {await msg.reply(`${ans.answer}`); setTimeout(async() => {state.waitingQuestion = false}, 1);}, 1);
                 }else if(qlines[0] === 'Maaf limit harian kamu sudah habis, beli premium untuk mendapatkan limit Unlimited, atau kamu dapat menunggu reset limit pada pukul 05.05 setiap harinya'){
-                    setTimeout(async () => {await msg.reply(`.buylimit 30`); setTimeout(async() => {state.waitingQuestion = false}, 1500)}, 1000);
+                    setTimeout(async () => {await msg.reply(`.buylimit 30`); setTimeout(async() => {state.waitingQuestion = false}, 1)}, 1);
                 }else if(qlines[0] === 'Masih ada game yang blum kamu selesaikan'){
-                    setTimeout(async () => {state.waitingQuestion = false}, 2000);
+                    setTimeout(async () => {state.waitingQuestion = false}, 1);
                 }
             }
         } else if (msg.body === ',help') {
             await client.sendMessage(msg.from, `${generateHelp()}`);
-        } else if (msg.body.startsWith('Silahkan ') && !(msg.isGroup)) {
-            await client.sendMessage(msg.from, 'gunting');
+        } else if (msg.body.startsWith('Silahkan ')) {
+            await client.sendMessage(msg.from, 'gunting' && !(msg.isGroup));
         } else if (msg.body === ',credit') {
             await client.sendMessage(msg.from, `> Bot Information \n _Author_ : \`@kyluxx\` \n _Supported by_ : \`@wwebjs\``);
         } else if (msg.body === ',ping') {
@@ -689,19 +692,25 @@ client.on('message', async msg => {
             }
         } else if (msg.body.startsWith(',startm ')) {
             state.atChat = msg.from;
-            const timeout = Number.parseInt(msg.body.split(' ')[1]);
-            msg.reply(`Starting Task. TO : \`${timeout}m\``);
+            //const timeout = Number.parseInt(msg.body.split(' ')[1]);
+            msg.reply(`Starting Task. Call \`,stopm\` to stop this process.`);
             state.inter = setInterval(async () => {
                 if(!state.waitingQuestion){
                     state.waitingQuestion = true;
                     await client.sendMessage(state.atChat,".math impossible");
                 }
             }, 1000);
+            /*
             setTimeout(async () => { 
                 clearInterval(state.inter); 
                 await msg.reply(`Task completed. TO: \`${timeout}m\``);
                 state.inter = null;
+                state.chatAt = null;
              }, ((timeout * 60) * 1000));
+            */
+        } else if (msg.body === ',stopm') {
+            msg.reply(`Stopping Task. Call \`,startm\` to re-start this process.`);
+            clearInterval(state.inter);
         } else if (msg.body.startsWith(',g ')) {
             let chat = await msg.getChat();
             let formatText =
@@ -893,3 +902,5 @@ client.on('vote_update', (vote) => {
     /** The vote that was affected: */
     console.log(vote);
 });
+
+
