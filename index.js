@@ -267,11 +267,17 @@ client.on('message', async msg => {
         if (qlines != undefined) {
             if(qlines[3]?.match(/-?\d+\s[÷×+\-*/]\s-?\d+/)){
                 const ans = mathSolver(qlines[3]);
-                setTimeout(async () => {await msg.reply(`${ans.answer}`); setTimeout(async() => {state.waitingQuestion = false}, 1);}, 1);
+                setTimeout(async () => {
+                    await msg.reply(`${ans.answer}`); 
+                    setTimeout(async() => {state.waitingQuestion = false}, 2000);
+                }, 1);
             }else if(qlines[0] === 'Maaf limit harian kamu sudah habis, beli premium untuk mendapatkan limit Unlimited, atau kamu dapat menunggu reset limit pada pukul 05.05 setiap harinya'){
-                setTimeout(async () => {await msg.reply(`.buylimit 30`); setTimeout(async() => {state.waitingQuestion = false}, 1)}, 1);
+                setTimeout(async () => {
+                    await msg.reply(`.buylimit 30`);
+                    setTimeout(async() => {state.waitingQuestion = false}, 2000);
+                }, 1);
             }else if(qlines[0] === 'Masih ada game yang blum kamu selesaikan'){
-                setTimeout(async () => {state.waitingQuestion = false}, 1);
+                setTimeout(async () => {state.waitingQuestion = false}, 2000);
             }
         }
     }
@@ -737,7 +743,7 @@ client.on('message', async msg => {
             }else{
                 await msg.reply("No media found.");
             }
-        } else if (msg.body.startsWith(',startm ')) {
+        } else if (msg.body === ',startm') {
             state.atChat = msg.from;
             //const timeout = Number.parseInt(msg.body.split(' ')[1]);
             msg.reply(`Starting Task. Call \`,stopm\` to stop this process.`);
