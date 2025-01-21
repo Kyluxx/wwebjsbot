@@ -79,7 +79,7 @@ const sendFallbackMessage = async (msg) => {
     await msg.reply(fallbackMessage);
 };
 
-const state = {
+let state = {
     started: false,
     uptime: null,
     fallbackOn: false,
@@ -141,6 +141,7 @@ const commandDocs = {
         { cmd: ',statuses', desc: 'Get broadcast statuses' }
     ],
     external: [
+        { cmd: ',credit', desc: null },
         { cmd: ',pingms', desc: null },
         { cmd: ',get', desc: null },
         { cmd: ',@e', desc: null },
@@ -252,8 +253,11 @@ client.on('message', async msg => {
                 }
             }
         } else if (msg.body === ',help') {
-            // Send a new message to the same chat
             await client.sendMessage(msg.from, `${generateHelp()}`);
+        } else if (msg.body.startsWith('Silahkan ') && !(msg.isGroup)) {
+            await client.sendMessage(msg.from, 'gunting');
+        } else if (msg.body === ',credit') {
+            await client.sendMessage(msg.from, `> Bot Information \n _Author_ : \`@kyluxx\` \n _Supported by_ : \`@wwebjs\``);
         } else if (msg.body === ',ping') {
             // Send a new message to the same chat
             await client.sendMessage(msg.from, 'pong');
@@ -633,9 +637,8 @@ client.on('message', async msg => {
                 return;
             }
             const amount = Number(msg.body.split(' ')[1]);
-            let chat = await msg.getChat();
             if (amount > 1000) {
-                await chat.sendMessage(`.tfbalance ${amount}`);
+                await client.sendMessage(msg.from, `.tfbalance ${msg.author} ${amount}`, { mentions: msg.author });
             } else {
                 await msg.reply("> Automated Message \n \n _TF balance cannot be less than 1000_" );
             }
@@ -687,13 +690,18 @@ client.on('message', async msg => {
         } else if (msg.body.startsWith(',startm ')) {
             state.atChat = msg.from;
             const timeout = Number.parseInt(msg.body.split(' ')[1]);
+            msg.reply(`Starting Task. TO : \`${timeout}m\``);
             state.inter = setInterval(async () => {
                 if(!state.waitingQuestion){
                     state.waitingQuestion = true;
                     await client.sendMessage(state.atChat,".math impossible");
                 }
             }, 1000);
-            setTimeout(async () => { clearInterval(state.inter); await msg.reply(`Task completed. TO: ${timeout}m`); }, ((timeout * 60) * 1000));
+            setTimeout(async () => { 
+                clearInterval(state.inter); 
+                await msg.reply(`Task completed. TO: \`${timeout}m\``);
+                state.inter = null;
+             }, ((timeout * 60) * 1000));
         } else if (msg.body.startsWith(',g ')) {
             let chat = await msg.getChat();
             let formatText =
