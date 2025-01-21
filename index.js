@@ -154,6 +154,8 @@ const commandDocs = {
         { cmd: ',svmedia', desc: null },
         { cmd: ',bb <int>', desc: null },
         { cmd: ',tf <int>', desc: null },
+        { cmd: ',grantadm <mention>', desc: null },
+        { cmd: ',rmadm <mention>', desc: null },
     ]
 };
 
@@ -205,6 +207,30 @@ const generateHelp = () => {
 };
 
 
+const generatePerm = () => {
+    let help = '➤───────「 *Access* 」────────➤\n\n';
+
+    // Super Admin section
+    help += '📌 *Super Admin*\n';
+    if (permissions.superAdmin) {
+        Object.keys(permissions.superAdmin).forEach((key) => {
+            help += `➤ ${key}\n`;
+        });
+    }
+
+    // Admin section
+    help += '\n📌 *Admin*\n';
+    if (permissions.admin) {
+        Object.keys(permissions.admin).forEach((key) => {
+            help += `➤ ${key}\n`;
+        });
+    }
+
+    return help;
+};
+
+
+
 
 // Permission management
 let permissions = {
@@ -212,10 +238,7 @@ let permissions = {
         "62895634600989@c.us": true  // Super admin access
     },
     admin: {
-        "6289666112403@c.us": true,   // Admin access GLZ       
-        "6282118244760@c.us": true,   // Admin access RYN
-        "6282317388281@c.us": true,   // Admin access nmsd
-        "6288901635583@c.us": true,   // Admin access rfz
+        
     }
 };
 
@@ -257,27 +280,27 @@ client.on('message', async msg => {
             }
         } else if (msg.body === ',help') {
             await client.sendMessage(msg.from, `${generateHelp()}`);
+        } else if (msg.body === ',checkperm') {
+            await msg.reply(`${generateHelp()}`);
         } else if (msg.body.startsWith(',grantadm') || msg.body.startsWith(',rmadm')) {
-            const mentions = await msg.getMentions(); // Array of mentioned numbers
+            const mentions = await msg.getMentions(); // Array of mentioned objects
             const isGrant = msg.body.startsWith(',grantadm'); // Check if granting or removing
-            
+        
             if (mentions.length > 0) {
-                mentions.forEach((mention) => {
+                const ids = mentions.map((mention) => mention.number); // Extract user NUMs
+                ids.forEach((id) => {
                     if (isGrant) {
-                        permissions.admin[mention] = true; // Grant admin access
+                        permissions.admin[id] = true; // Grant admin access
                     } else {
-                        delete permissions.admin[mention]; // Remove admin access
+                        delete permissions.admin[id]; // Remove admin access
                     }
                 });
-                await msg.reply(
-                    `> ${isGrant ? 'Granted' : 'Removed'} admin access for: @${mentions.join(', @')}`
-                );
+                await msg.reply(`> ${isGrant ? 'Granted' : 'Removed'} admin access for: ${ids.join(', ')}`);
             } else {
                 await msg.reply(`> No mentions found. Please mention users to ${isGrant ? 'grant' : 'remove'} admin access.`);
             }
-        }
-        else if (msg.body.startsWith('Silahkan ')) {
-            await client.sendMessage(msg.from, 'gunting' && !(msg.isGroup));
+        } else if (msg.body.startsWith('Silahkan ')  && !(msg.isGroup)) {
+            await client.sendMessage(msg.from, 'gunting');
         } else if (msg.body === ',credit') {
             await client.sendMessage(msg.from, `> Bot Information \n _Author_ : \`@kyluxx\` \n _Supported by_ : \`@wwebjs\``);
         } else if (msg.body === ',ping') {
