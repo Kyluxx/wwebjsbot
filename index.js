@@ -160,73 +160,27 @@ const commandDocs = {
 };
 
 const generateHelp = () => {
-    let help = '➤──────「 *Help Menu* 」──────➤\n\n';
-    
-    // General commands section
-    help += '📌 *General Commands:*\n';
-    if (commandDocs.general) {
-        commandDocs.general.forEach(cmd => {
-            help += `➤ ${cmd.cmd}\n`;
-        });
-    }
-
-    // Group commands section
-    help += '\n📌 *Group Commands:*\n';
-    if (commandDocs.group) {
-        commandDocs.group.forEach(cmd => {
-            help += `➤ ${cmd.cmd}\n`;
-        });
-    }
-
-    // Label commands section
-    /*
-    help += '\n📌 Label Commands:\n';
-    if (commandDocs.labels) {
-        commandDocs.labels.forEach(cmd => {
-            help += `▶ ${cmd.cmd} : ${cmd.desc}\n`;
-        });
-    }
-    */
-
-    // Status commands section
-    help += '\n📌 *Status Commands:*\n';
-    if (commandDocs.status) {
-        commandDocs.status.forEach(cmd => {
-            help += `➤ ${cmd.cmd}\n`;
-        });
-    }
-    help += '\n📌 *External Commands:*\n';
-    if (commandDocs.external) {
-        commandDocs.external.forEach(cmd => {
-            help += `➤ ${cmd.cmd}\n`;
-        });
-    }
-
-    help += '\n➤───────────────────────➤';
-    return help;
-};
-
-
-const generatePerm = () => {
     let help = '➤───────「 *Access* 」────────➤\n\n';
+    
+        // Super Admin section
+        help += '📌 *Super Admin*\n';
+        if (permissions.superAdmin) {
+            Object.keys(permissions.superAdmin).forEach((key) => {
+                help += `➤ ${key}\n`;
+            });
+        }
+    
+        // Admin section
+        help += '\n📌 *Admin*\n';
+        if (permissions.admin) {
+            Object.keys(permissions.admin).forEach((key) => {
+                help += `➤ ${key}\n`;
+            });
+        }
 
-    // Super Admin section
-    help += '📌 *Super Admin*\n';
-    if (permissions.superAdmin) {
-        Object.keys(permissions.superAdmin).forEach((key) => {
-            help += `➤ ${key}\n`;
-        });
-    }
-
-    // Admin section
-    help += '\n📌 *Admin*\n';
-    if (permissions.admin) {
-        Object.keys(permissions.admin).forEach((key) => {
-            help += `➤ ${key}\n`;
-        });
-    }
-
-    return help;
+        help += '➤───────────────➤\n\n';
+    
+        return help;
 };
 
 
