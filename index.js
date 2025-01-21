@@ -89,6 +89,7 @@ let state = {
     waitingQuestion: false,
     atChat: null,
     inter: null,
+    pend: false,
     tfc: 0,
 };
 
@@ -157,10 +158,60 @@ const commandDocs = {
         { cmd: ',tf <int>', desc: null },
         { cmd: ',grantadm <mention>', desc: null },
         { cmd: ',rmadm <mention>', desc: null },
+        { cmd: ',pend', desc: null },
+        { cmd: ',continue', desc: null },
     ]
 };
 
+
 const generateHelp = () => {
+    let help = '➤──────「 *Help Menu* 」──────➤\n\n';
+    
+    // General commands section
+    help += '📌 *General Commands:*\n';
+    if (commandDocs.general) {
+        commandDocs.general.forEach(cmd => {
+            help += `➤ ${cmd.cmd}\n`;
+        });
+    }
+
+    // Group commands section
+    help += '\n📌 *Group Commands:*\n';
+    if (commandDocs.group) {
+        commandDocs.group.forEach(cmd => {
+            help += `➤ ${cmd.cmd}\n`;
+        });
+    }
+
+    // Label commands section
+    /*
+    help += '\n📌 Label Commands:\n';
+    if (commandDocs.labels) {
+        commandDocs.labels.forEach(cmd => {
+            help += `▶ ${cmd.cmd} : ${cmd.desc}\n`;
+        });
+    }
+    */
+
+    // Status commands section
+    help += '\n📌 *Status Commands:*\n';
+    if (commandDocs.status) {
+        commandDocs.status.forEach(cmd => {
+            help += `➤ ${cmd.cmd}\n`;
+        });
+    }
+    help += '\n📌 *External Commands:*\n';
+    if (commandDocs.external) {
+        commandDocs.external.forEach(cmd => {
+            help += `➤ ${cmd.cmd}\n`;
+        });
+    }
+
+    help += '\n➤───────────────────────➤';
+    return help;
+};
+
+const generatePerm = () => {
     let help = '➤───────「 *Access* 」────────➤\n\n';
     
         // Super Admin section
@@ -207,6 +258,18 @@ const checkPermission = (userId, level) => {
 
 
 client.on('message', async msg => {
+    
+    if(msg.body === ',continue'){
+        if(!(checkPermission((msg.author === undefined ? msg.from : msg.author), 'superAdmin'))) {
+            msg.reply("> Unauthorized commands");
+            return;
+        } 
+        state.pend = false;
+        msg.reply("> CMDs will be continued.");
+    }
+
+    if(state.false) return;
+
     let t = Date.now();
     console.log('MESSAGE RECEIVED', msg);
     state.lastChat = msg;
@@ -247,9 +310,12 @@ client.on('message', async msg => {
         if (msg.body === ',ping reply') {
             // Send a new message as a reply to the current one
             await msg.reply('pong');
-        } else if (msg.body === ',help') {
-            await client.sendMessage(msg.from, `${generateHelp()}`);
         } else if (msg.body === ',checkperm') {
+            await client.sendMessage(msg.from, `${generatePerm()}`);
+        } else if (msg.body === ',pend') {
+            state.pend = true;
+            await msg.reply(`CMDs will be paused.`);
+        } else if (msg.body === ',help') {
             await msg.reply(`${generateHelp()}`);
         } else if (msg.body.startsWith(',grantadm') || msg.body.startsWith(',rmadm')) {
             if(!(checkPermission((msg.author === undefined ? msg.from : msg.author), 'superAdmin'))) {
@@ -260,7 +326,7 @@ client.on('message', async msg => {
             const isGrant = msg.body.startsWith(',grantadm'); // Check if granting or removing
         
             if (mentions.length > 0) {
-                const ids = mentions.map((mention) => mention.number); // Extract user NUMs
+                const ids = mentions.map((mention) => mention.number + '@c.us'); // Extract user NUMs
                 ids.forEach((id) => {
                     if (isGrant) {
                         permissions.admin[id] = true; // Grant admin access
