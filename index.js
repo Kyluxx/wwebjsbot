@@ -268,7 +268,7 @@ client.on('message', async msg => {
         msg.reply("> CMDs will be continued.");
     }
 
-    if(state.false) return;
+    if(state.pend) return;
 
     let t = Date.now();
     console.log('MESSAGE RECEIVED', msg);
@@ -314,7 +314,7 @@ client.on('message', async msg => {
             await client.sendMessage(msg.from, `${generatePerm()}`);
         } else if (msg.body === ',pend') {
             state.pend = true;
-            await msg.reply(`CMDs will be paused.`);
+            await msg.reply(`> CMDs will be paused.`);
         } else if (msg.body === ',help') {
             await msg.reply(`${generateHelp()}`);
         } else if (msg.body.startsWith(',grantadm') || msg.body.startsWith(',rmadm')) {
