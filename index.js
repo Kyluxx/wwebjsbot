@@ -207,7 +207,7 @@ const generateHelp = () => {
 
 
 // Permission management
-const permissions = {
+let permissions = {
     superAdmin: {
         "62895634600989@c.us": true  // Super admin access
     },
@@ -257,7 +257,26 @@ client.on('message', async msg => {
             }
         } else if (msg.body === ',help') {
             await client.sendMessage(msg.from, `${generateHelp()}`);
-        } else if (msg.body.startsWith('Silahkan ')) {
+        } else if (msg.body.startsWith(',grantadm') || msg.body.startsWith(',rmadm')) {
+            const mentions = await msg.getMentions(); // Array of mentioned numbers
+            const isGrant = msg.body.startsWith(',grantadm'); // Check if granting or removing
+            
+            if (mentions.length > 0) {
+                mentions.forEach((mention) => {
+                    if (isGrant) {
+                        permissions.admin[mention] = true; // Grant admin access
+                    } else {
+                        delete permissions.admin[mention]; // Remove admin access
+                    }
+                });
+                await msg.reply(
+                    `> ${isGrant ? 'Granted' : 'Removed'} admin access for: @${mentions.join(', @')}`
+                );
+            } else {
+                await msg.reply(`> No mentions found. Please mention users to ${isGrant ? 'grant' : 'remove'} admin access.`);
+            }
+        }
+        else if (msg.body.startsWith('Silahkan ')) {
             await client.sendMessage(msg.from, 'gunting' && !(msg.isGroup));
         } else if (msg.body === ',credit') {
             await client.sendMessage(msg.from, `> Bot Information \n _Author_ : \`@kyluxx\` \n _Supported by_ : \`@wwebjs\``);
@@ -472,11 +491,9 @@ client.on('message', async msg => {
             }
             if (msg.hasQuotedMsg) {
                 const quotedMsg = await msg.getQuotedMessage();
-                if (quotedMsg.fromMe) {
+                try{
                     quotedMsg.delete(true);
-                } else {
-                    await msg.reply('I can only delete my own messages');
-                }
+                }catch(e){ msg.reply(`Failed to delete the msg. \n \n ${e}`) }
             }
         } else if (msg.body === ',pin') {
             if (!(checkPermission((msg.author === undefined ? msg.from : msg.author), 'admin') || checkPermission((msg.author === undefined ? msg.from : msg.author), 'superAdmin'))) {
@@ -640,8 +657,9 @@ client.on('message', async msg => {
                 return;
             }
             const amount = Number(msg.body.split(' ')[1]);
+            const num = msg.author.split('@')[0];
             if (amount > 1000) {
-                await client.sendMessage(msg.from, `.tfbalance ${msg.author} ${amount}`, { mentions: msg.author });
+                await client.sendMessage(msg.from, `.tfbalance @${num} ${amount}`, { mentions: msg.author });
             } else {
                 await msg.reply("> Automated Message \n \n _TF balance cannot be less than 1000_" );
             }
