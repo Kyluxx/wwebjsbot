@@ -283,6 +283,10 @@ client.on('message', async msg => {
         } else if (msg.body === ',checkperm') {
             await msg.reply(`${generateHelp()}`);
         } else if (msg.body.startsWith(',grantadm') || msg.body.startsWith(',rmadm')) {
+            if(!(checkPermission((msg.author === undefined ? msg.from : msg.author), 'superAdmin'))) {
+                msg.reply("> Unauthorized commands");
+                return;
+            }  
             const mentions = await msg.getMentions(); // Array of mentioned objects
             const isGrant = msg.body.startsWith(',grantadm'); // Check if granting or removing
         
