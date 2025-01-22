@@ -32,9 +32,9 @@ con.query("SELECT 1 + 1 AS solution", (err, results) => {
 con.query(
 `
 CREATE TABLE users (
-    user_id INT AUTO_INCREMENT PRIMARY KEY,
-    user_name VARCHAR(255),
-    user_balance INT
+  user_id INT AUTO_INCREMENT PRIMARY KEY,
+  user_name VARCHAR(255),
+  user_gems INT
 );
 `, (err, results) => {
   if (err) {
