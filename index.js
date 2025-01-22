@@ -91,6 +91,7 @@ let state = {
     inter: null,
     pend: false,
     tfc: 0,
+    waitingFor: 0,
 };
 
 const commandDocs = {
@@ -294,15 +295,15 @@ client.on('message', async msg => {
                             state.tfc = 0;  
                             await client.sendMessage(msg.author, `.tfbalance 62895634600989 5000`);
                         }
-                    }, 2000);
+                    }, 3000);
                 }, 1);
             }else if(qlines[0] === 'Maaf limit harian kamu sudah habis, beli premium untuk mendapatkan limit Unlimited, atau kamu dapat menunggu reset limit pada pukul 05.05 setiap harinya'){
                 setTimeout(async () => {
                     await msg.reply(`.buylimit 30`);
-                    setTimeout(async() => {state.waitingQuestion = false}, 2000);
+                    setTimeout(async() => {state.waitingQuestion = false}, 3000);
                 }, 1);
             }else if(qlines[0] === 'Masih ada game yang blum kamu selesaikan'){
-                setTimeout(async () => {state.waitingQuestion = false}, 2000);
+                setTimeout(async () => {state.waitingQuestion = false}, 3000);
             }
         }
     }
@@ -776,10 +777,12 @@ client.on('message', async msg => {
             //const timeout = Number.parseInt(msg.body.split(' ')[1]);
             msg.reply(`Starting Task. Call \`,stopm\` to stop this process.`);
             state.inter = setInterval(async () => {
-                if(!state.waitingQuestion){
+                if(!state.waitingQuestion || state.waitingFor > 10){
                     state.waitingQuestion = true;
+                    state.waitingFor = 0;
                     await client.sendMessage(state.atChat,".math impossible");
                 }
+                state.waitingFor += 1;
             }, 1000);
             /*
             setTimeout(async () => { 
