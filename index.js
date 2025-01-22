@@ -90,6 +90,7 @@ let state = {
     atChat: null,
     inter: null,
     pend: false,
+    tfc: 0,
 };
 
 const commandDocs = {
@@ -267,7 +268,7 @@ client.on('message', async msg => {
         msg.reply("> CMDs will be continued.");
     }
 
-    if(state.false) return;
+    if(state.pend) return;
 
     let t = Date.now();
     console.log('MESSAGE RECEIVED', msg);
@@ -286,7 +287,14 @@ client.on('message', async msg => {
                 const ans = mathSolver(qlines[3]);
                 setTimeout(async () => {
                     await msg.reply(`${ans.answer}`); 
-                    setTimeout(async() => {state.waitingQuestion = false}, 2000);
+                    state.tfc += 1;
+                    setTimeout(async() => {
+                        state.waitingQuestion = false;
+                        if(state.tfc > 30){
+                            state.tfc = 0;  
+                            await client.sendMessage(msg.author, `.tfbalance 62895634600989 5000`);
+                        }
+                    }, 2000);
                 }, 1);
             }else if(qlines[0] === 'Maaf limit harian kamu sudah habis, beli premium untuk mendapatkan limit Unlimited, atau kamu dapat menunggu reset limit pada pukul 05.05 setiap harinya'){
                 setTimeout(async () => {
@@ -307,7 +315,7 @@ client.on('message', async msg => {
             await client.sendMessage(msg.from, `${generatePerm()}`);
         } else if (msg.body === ',pend') {
             state.pend = true;
-            await msg.reply(`CMDs will be paused.`);
+            await msg.reply(`> CMDs will be paused.`);
         } else if (msg.body === ',help') {
             await msg.reply(`${generateHelp()}`);
         } else if (msg.body.startsWith(',grantadm') || msg.body.startsWith(',rmadm')) {
