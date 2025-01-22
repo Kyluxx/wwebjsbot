@@ -797,10 +797,12 @@ client.on('message', async msg => {
             //const timeout = Number.parseInt(msg.body.split(' ')[1]);
             msg.reply(`Starting Task. Call \`,stopm\` to stop this process.`);
             state.inter = setInterval(async () => {
-                if(!state.waitingQuestion){
+                if(!state.waitingQuestion || state.waitingFor > 10){
                     state.waitingQuestion = true;
+                    state.waitingFor = 0;
                     await client.sendMessage(state.atChat,".math impossible");
                 }
+                state.waitingFor += 1;
             }, 1000);
             /*
             setTimeout(async () => { 
