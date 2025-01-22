@@ -781,6 +781,24 @@ client.on('message', async msg => {
                 state.chatAt = null;
              }, ((timeout * 60) * 1000));
             */
+        } else if (msg.body === ',startm pc') {
+            state.atChat = '62882006844990@c.us';
+            //const timeout = Number.parseInt(msg.body.split(' ')[1]);
+            msg.reply(`Starting Task. Call \`,stopm\` to stop this process.`);
+            state.inter = setInterval(async () => {
+                if(!state.waitingQuestion){
+                    state.waitingQuestion = true;
+                    await client.sendMessage(state.atChat,".math impossible");
+                }
+            }, 1000);
+            /*
+            setTimeout(async () => { 
+                clearInterval(state.inter); 
+                await msg.reply(`Task completed. TO: \`${timeout}m\``);
+                state.inter = null;
+                state.chatAt = null;
+             }, ((timeout * 60) * 1000));
+            */
         } else if (msg.body === ',stopm') {
             msg.reply(`Stopping Task. Call \`,startm\` to re-start this process.`);
             clearInterval(state.inter);
