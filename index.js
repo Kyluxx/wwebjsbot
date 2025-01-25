@@ -6,20 +6,45 @@ import { mathSolver } from './function/mathsolver.js';
 import { getCurrentDay, getNextDay, getSpecifiedDay } from './function/jadwalfinder.js';
 import { saveChatLog, readLastChatLog } from './function/chats.js';
 import { getLastMediaData, saveMedia } from './function/media.js';
+import { addAcc } from './conn/conn.js'
+const express = require('express');
+const bodyParser = require('body-parser');
 
 const client = new Client({
     authStrategy: new LocalAuth(),
     // proxyAuthentication: { username: 'username', password: 'password' },
     puppeteer: { 
-        args: [
-            "--no-sandbox",
-            "--disable-setuid-sandbox",
-            "--disable-dev-shm-usage",
+          args: [
             "--disable-accelerated-2d-canvas",
-            "--no-first-run",
-            "--no-zygote",
-            "--single-process", 
+            "--disable-background-timer-throttling",
+            "--disable-backgrounding-occluded-windows",
+            "--disable-breakpad",
+            "--disable-cache",
+            "--disable-component-extensions-with-background-pages",
+            "--disable-crash-reporter",
+            "--disable-dev-shm-usage",
+            "--disable-extensions",
             "--disable-gpu",
+            "--disable-hang-monitor",
+            "--disable-ipc-flooding-protection",
+            "--disable-mojo-local-storage",
+            "--disable-notifications",
+            "--disable-popup-blocking",
+            "--disable-print-preview",
+            "--disable-prompt-on-repost",
+            "--disable-renderer-backgrounding",
+            "--disable-software-rasterizer",
+            "--disable-setuid-sandbox",
+            "--ignore-certificate-errors",
+            "--log-level=3",
+            "--no-default-browser-check",
+            "--no-first-run",
+            "--no-sandbox",
+            "--no-zygote",
+            "--renderer-process-limit=100",
+            "--enable-gpu-rasterization",
+            "--enable-zero-copy",
+            "--single-process", 
           ],
         headless: true,
     }
@@ -319,6 +344,9 @@ client.on('message', async msg => {
             await msg.reply(`> CMDs will be paused.`);
         } else if (msg.body === ',help') {
             await msg.reply(`${generateHelp()}`);
+        } else if (msg.body === ',createacc') {
+            const resp = await addAcc(msg.author);
+            await msg.reply(`Your account has been created! \n _LOG: ${resp}_`);
         } else if (msg.body.startsWith(',grantadm') || msg.body.startsWith(',rmadm')) {
             if(!(checkPermission((msg.author === undefined ? msg.from : msg.author), 'superAdmin'))) {
                 msg.reply("> Unauthorized commands");
@@ -922,9 +950,9 @@ client.on('call', async (call) => {
 client.on('disconnected', (reason) => {
     console.log('Client was logged out', reason);
 });
-
+/*** 
 client.on('contact_changed', async (message, oldId, newId, isContact) => {
-    /** The time the event occurred. */
+    // The time the event occurred. 
     const eventTime = (new Date(message.timestamp * 1000)).toLocaleString();
 
     console.log(
@@ -933,7 +961,7 @@ client.on('contact_changed', async (message, oldId, newId, isContact) => {
             `${(await client.getChatById(message.to ?? message.from)).name} ` : ' '}` +
         `changed their phone number\nat ${eventTime}.\n` +
         `Their new phone number is ${newId.slice(0, -5)}.\n`);
-
+*/
     /**
      * Information about the @param {message}:
      * 
@@ -958,7 +986,7 @@ client.on('contact_changed', async (message, oldId, newId, isContact) => {
      * whos phone number was changed.
      * @param {message.to} is a user's id (after the change), the current user has a chat with.
      */
-});
+// });
 
 client.on('group_admin_changed', (notification) => {
     if (notification.type === 'promote') {
@@ -1008,3 +1036,48 @@ client.on('vote_update', (vote) => {
 });
 
 
+
+
+
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.use(bodyParser.json());
+
+app.get('/', (req, res) => {
+    res.send('WhatsApp API is running!');
+});
+
+// API Endpoint: Send message
+app.post('/send-message', async (req, res) => {
+    const { phone, message } = req.body;
+
+    if (!phone || !message) {
+        return res.status(400).json({
+            success: false,
+            error: 'Please provide both phone number and message!',
+        });
+    }
+
+    try {
+        const chatId = `${phone}@c.us`; // Format the phone number for WhatsApp
+        await client.sendMessage(chatId, message);
+
+        res.json({
+            success: true,
+            message: 'Message sent successfully!',
+        });
+    } catch (error) {
+        console.error('Error sending message:', error);
+        res.status(500).json({
+            success: false,
+            error: 'Failed to send message. Check server logs for details.',
+        });
+    }
+});
+
+// Start Express server
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
