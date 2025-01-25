@@ -7,8 +7,8 @@ import { getCurrentDay, getNextDay, getSpecifiedDay } from './function/jadwalfin
 import { saveChatLog, readLastChatLog } from './function/chats.js';
 import { getLastMediaData, saveMedia } from './function/media.js';
 import { addAcc } from './conn/conn.js'
-const express = require('express');
-const bodyParser = require('body-parser');
+import express from 'express';
+import bodyParser from 'body-parser';
 
 const client = new Client({
     authStrategy: new LocalAuth(),
