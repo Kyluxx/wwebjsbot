@@ -9,7 +9,7 @@ COPY package*.json ./
 
 # Install Node.js dependencies
 RUN npm install 
-RUN npm i puppeteer
+#RUN npm i puppeteer
 
 # Copy the rest of the app
 COPY . .
