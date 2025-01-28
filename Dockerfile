@@ -1,21 +1,43 @@
+# Use a Node.js image
+FROM node:18-slim
 
-# Use the official Node.js image as the base
-FROM node:18-alpine
+# Install necessary dependencies for Puppeteer
+RUN apt-get update && apt-get install -y \
+    libnss3 \
+    libx11-xcb1 \
+    libxcomposite1 \
+    libxcursor1 \
+    libxdamage1 \
+    libxrandr2 \
+    libasound2 \
+    libatk1.0-0 \
+    libatk-bridge2.0-0 \
+    libpangocairo-1.0-0 \
+    libcups2 \
+    libdbus-1-3 \
+    libdrm2 \
+    libgbm1 \
+    libglib2.0-0 \
+    libnspr4 \
+    libxshmfence1 \
+    xdg-utils \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
-# Set the working directory in the container
+# Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json to the working directory
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install dependencies
+# Install Node.js dependencies
 RUN npm install
 
-# Copy the rest of the app's source code
+# Copy the rest of the app
 COPY . .
 
-# Expose the port your app runs on
+# Expose the application port (if needed)
 EXPOSE 3000
 
-# Command to run the app
-CMD ["npm", "start"]
+# Command to start the application
+CMD ["node", "index.js"]
