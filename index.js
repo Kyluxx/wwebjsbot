@@ -14,9 +14,10 @@ const client = new Client({
     authStrategy: new LocalAuth(),
     // proxyAuthentication: { username: 'username', password: 'password' },
     puppeteer: { 
-          // executablePath: '/snap/bin/chromium',
+          executablePath: '/snap/bin/chromium',
 
           args: [
+            /*
             "--disable-accelerated-2d-canvas",
             "--disable-background-timer-throttling",
             "--disable-backgrounding-occluded-windows",
@@ -47,6 +48,7 @@ const client = new Client({
             "--enable-gpu-rasterization",
             "--enable-zero-copy",
             "--single-process", 
+            */
           ],
         headless: true,
     }
